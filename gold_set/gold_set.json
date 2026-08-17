@@ -1,0 +1,5 @@
+{
+  "description": "Hand-labeled gold set for evaluating the extraction pipeline. Each PEP entry contains the alternatives and objections I identified by reading the source text myself.",
+  "labeled_by": "manual review",
+  "peps": []
+}
