@@ -25,9 +25,9 @@ from .extract_classified import extract_classified
 # Graph assembly
 # ---------------------------------------------------------------------------
 
-def build_graph(deterministic_results: dict, classified_results: dict = None) -> nx.DiGraph:
+def build_graph(deterministic_results: dict, classified_results: dict = None) -> nx.MultiDiGraph:
     """Assemble the knowledge graph from extraction results."""
-    G = nx.DiGraph()
+    G = nx.MultiDiGraph()
 
     proposals = deterministic_results["proposals"]
     persons = deterministic_results["persons"]
@@ -77,13 +77,17 @@ def build_graph(deterministic_results: dict, classified_results: dict = None) ->
     # --- supersedes / requires / replaces edges ---
     for pep_num, proposal in proposals.items():
         if proposal.superseded_by is not None:
-            G.add_edge(f"pep_{proposal.superseded_by}", f"pep_{pep_num}",
-                       type="supersedes")
+            target_id = f"pep_{proposal.superseded_by}"
+            if target_id in G:
+                G.add_edge(target_id, f"pep_{pep_num}", type="supersedes")
         if proposal.replaces is not None:
-            G.add_edge(f"pep_{pep_num}", f"pep_{proposal.replaces}",
-                       type="supersedes")
+            target_id = f"pep_{proposal.replaces}"
+            if target_id in G:
+                G.add_edge(f"pep_{pep_num}", target_id, type="supersedes")
         for req in proposal.requires:
-            G.add_edge(f"pep_{pep_num}", f"pep_{req}", type="requires")
+            target_id = f"pep_{req}"
+            if target_id in G:
+                G.add_edge(f"pep_{pep_num}", target_id, type="requires")
 
     # --- cross-reference edges ---
     for pep_num, refs in references.items():
@@ -135,30 +139,60 @@ def build_graph(deterministic_results: dict, classified_results: dict = None) ->
     return G
 
 
-def _add_manual_resembles_edges(G: nx.DiGraph):
+def _add_manual_resembles_edges(G: nx.MultiDiGraph):
     """Add hand-identified 'resembles' edges.
 
     These are the most valuable edges in the graph -- they capture the insight
     that a rejected idea in one PEP was essentially what a later PEP shipped.
-    Can't automate this reliably, so we tag them manually.
+    Can't automate this reliably, so we tag them manually after reviewing
+    the extraction output.
     """
-    # The flagship example: PEP 563's approach to annotation evaluation
-    # was superseded by PEP 649's fundamentally different approach.
-    # Some alternatives rejected by 563 foreshadowed 649's design.
-    resembles_pairs = [
-        # (alternative node pattern, target PEP, justification)
-        # These will be matched against actual alternative nodes after
-        # the graph is fully built. For now, we store the intent.
+    # Find alternative nodes by matching on source_pep and name substring
+    def find_alt(source_pep: int, name_fragment: str):
+        for node_id, data in G.nodes(data=True):
+            if (data.get("type") == "alternative"
+                    and data.get("source_pep") == source_pep
+                    and name_fragment.lower() in data.get("name", "").lower()):
+                return node_id
+        return None
+
+    # Hand-justified resembles pairs:
+    resembles = [
+        # PEP 563 rejected "lazy evaluation via descriptors" -- PEP 649 later
+        # shipped exactly this approach (deferred evaluation using descriptors).
+        # This is the flagship example of the system's value.
+        (563, "lazy evaluation", 649,
+         "PEP 563 rejected lazy/deferred evaluation as too complex; PEP 649 "
+         "later shipped this exact approach with a different mechanism."),
+
+        # PEP 647 rejected "narrows in both branches" for TypeGuard --
+        # PEP 742 later shipped TypeIs which does exactly that.
+        (647, "narrows in both branches", 742,
+         "PEP 647 rejected bidirectional narrowing for TypeGuard; PEP 742 "
+         "introduced TypeIs which provides this with stricter guarantees."),
+
+        # PEP 484 considered angle brackets -- PEP 695 revisited the syntax
+        # question entirely with its new type parameter syntax.
+        (484, "angle brackets", 695,
+         "PEP 484 rejected angle brackets for generics; PEP 695 revisited "
+         "type parameter syntax and chose a different approach entirely."),
     ]
-    # TODO: populate after extraction is done and we can see actual alt node IDs
-    # The actual linking happens in a manual review pass -- see gold_set/
+
+    for source_pep, name_frag, target_pep, justification in resembles:
+        alt_id = find_alt(source_pep, name_frag)
+        if alt_id:
+            G.add_edge(alt_id, f"pep_{target_pep}",
+                       type="resembles", justification=justification)
+        else:
+            print(f"  warning: couldn't find alternative '{name_frag}' "
+                  f"in PEP {source_pep} for resembles edge")
 
 
 # ---------------------------------------------------------------------------
 # Validation
 # ---------------------------------------------------------------------------
 
-def validate_graph(G: nx.DiGraph) -> dict:
+def validate_graph(G: nx.MultiDiGraph) -> dict:
     """Run integrity checks on the assembled graph."""
     stats = {
         "total_nodes": G.number_of_nodes(),
@@ -174,7 +208,7 @@ def validate_graph(G: nx.DiGraph) -> dict:
         ntype = data.get("type", "unknown")
         stats["node_types"][ntype] = stats["node_types"].get(ntype, 0) + 1
 
-    for u, v, data in G.edges(data=True):
+    for u, v, key, data in G.edges(data=True, keys=True):
         etype = data.get("type", "unknown")
         stats["edge_types"][etype] = stats["edge_types"].get(etype, 0) + 1
 
@@ -196,7 +230,7 @@ def validate_graph(G: nx.DiGraph) -> dict:
 # Export
 # ---------------------------------------------------------------------------
 
-def graph_to_knowledge_state(G: nx.DiGraph) -> dict:
+def graph_to_knowledge_state(G: nx.MultiDiGraph) -> dict:
     """Serialize the graph to our knowledge_state.json format.
     This is the mandatory deliverable -- must be human-readable."""
     state = {
@@ -215,7 +249,7 @@ def graph_to_knowledge_state(G: nx.DiGraph) -> dict:
         entry.update(data)
         state["nodes"].append(entry)
 
-    for u, v, data in G.edges(data=True):
+    for u, v, key, data in G.edges(data=True, keys=True):
         entry = {"source": u, "target": v}
         entry.update(data)
         state["edges"].append(entry)
@@ -223,7 +257,7 @@ def graph_to_knowledge_state(G: nx.DiGraph) -> dict:
     return state
 
 
-def export_graphml(G: nx.DiGraph, path: str):
+def export_graphml(G: nx.MultiDiGraph, path: str):
     """Export graph in GraphML format for visualization in Gephi/Cytoscape."""
     # graphml doesn't handle lists well, convert to strings
     H = G.copy()

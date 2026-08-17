@@ -25,12 +25,12 @@ import networkx as nx
 from .ontology import CONCEPTS
 
 
-def load_knowledge_graph(path: str = "knowledge_state.json") -> nx.DiGraph:
+def load_knowledge_graph(path: str = "knowledge_state.json") -> nx.MultiDiGraph:
     """Load the knowledge state JSON back into a networkx graph."""
     with open(path, "r") as f:
         state = json.load(f)
 
-    G = nx.DiGraph()
+    G = nx.MultiDiGraph()
 
     for node in state["nodes"]:
         node_id = node.pop("id")

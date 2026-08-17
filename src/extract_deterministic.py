@@ -33,7 +33,8 @@ SECTION_CONTEXT_MAP = {
 }
 
 # regex for PEP cross-references in body text
-PEP_REF_PATTERN = re.compile(r'\bPEP\s+(\d+)\b', re.IGNORECASE)
+# catches both "PEP 484" and ":pep:`484`" (the reST directive form)
+PEP_REF_PATTERN = re.compile(r'(?:\bPEP\s+(\d+)\b|:pep:`(\d+)`)', re.IGNORECASE)
 
 # status string normalization
 STATUS_MAP = {
@@ -193,8 +194,12 @@ def _parse_pep_list(raw: str) -> list[int]:
 
 
 def segment_pep_body(raw_text: str) -> dict[str, str]:
-    """Split a PEP's body text into named sections.
-    Returns {section_name_lower: section_text}."""
+    """Split a PEP's body text into top-level sections.
+    Returns {section_name_lower: section_text}.
+
+    Only '=' underlines are treated as section breaks. Subsections (---,
+    ~~~, etc.) are folded into their parent section's text, which is what
+    we want -- the 'Rejected Ideas' section should include all its sub-items."""
     sections = {}
     current_section = "preamble"
     current_lines = []
@@ -202,24 +207,32 @@ def segment_pep_body(raw_text: str) -> dict[str, str]:
     # skip past the header block first
     in_header = True
     lines = raw_text.split("\n")
+    skip_next = False
 
     for i, line in enumerate(lines):
+        if skip_next:
+            skip_next = False
+            continue
+
         # detect end of header: first blank line after seeing header fields
         if in_header:
             if line.strip() == "" and i > 2:
                 in_header = False
             continue
 
-        # reST section headers: a line followed by === or --- or ~~~
-        if i + 1 < len(lines) and lines[i + 1].strip():
+        # only treat '=' underlines as top-level section boundaries
+        # subsections (---, ~~~, etc.) stay inside their parent
+        if i + 1 < len(lines) and line.strip():
             underline = lines[i + 1].strip()
-            if len(underline) >= 3 and all(c == underline[0] for c in underline) \
-                    and underline[0] in "=-~^`:.'\"":
-                # this line is a section title
+            if (len(underline) >= 3
+                    and all(c == '=' for c in underline)
+                    and len(line.strip()) > 0):
+                # this line is a top-level section title
                 if current_lines:
                     sections[current_section] = "\n".join(current_lines)
                 current_section = line.strip().lower()
                 current_lines = []
+                skip_next = True  # skip the underline
                 continue
 
         current_lines.append(line)
@@ -230,6 +243,23 @@ def segment_pep_body(raw_text: str) -> dict[str, str]:
 
     return sections
 
+def _classify_section_context(section_name: str) -> ReferenceContext:
+    """Map a section name to a ReferenceContext using keyword matching.
+    PEP section names vary (e.g. 'rationale and goals' vs 'rationale'),
+    so we match on keywords rather than exact names."""
+    name = section_name.lower()
+    if "rejected" in name:
+        return ReferenceContext.REJECTED_IDEAS
+    if "backward" in name:
+        return ReferenceContext.BACKWARDS_COMPAT
+    if "rationale" in name or "motivation" in name:
+        return ReferenceContext.RATIONALE
+    if "abstract" in name:
+        return ReferenceContext.ABSTRACT
+    if "specification" in name:
+        return ReferenceContext.SPECIFICATION
+    return ReferenceContext.OTHER
+
 
 def extract_pep_references(sections: dict[str, str]) -> list[dict]:
     """Find all PEP cross-references in the body text.
@@ -238,10 +268,11 @@ def extract_pep_references(sections: dict[str, str]) -> list[dict]:
     seen = set()  # dedupe within same section
 
     for section_name, text in sections.items():
-        context = SECTION_CONTEXT_MAP.get(section_name, ReferenceContext.OTHER)
+        context = _classify_section_context(section_name)
 
         for match in PEP_REF_PATTERN.finditer(text):
-            target = int(match.group(1))
+            # group(1) is "PEP NNN" form, group(2) is ":pep:`NNN`" form
+            target = int(match.group(1) or match.group(2))
             key = (target, context)
             if key not in seen:
                 seen.add(key)

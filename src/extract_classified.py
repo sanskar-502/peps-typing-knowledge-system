@@ -190,9 +190,14 @@ def classify_section(pep_number: int, section_name: str, text: str,
 # Batch extraction
 # ---------------------------------------------------------------------------
 
-# sections we want to run classification on
-TARGET_SECTIONS = ["rejected ideas", "rejected alternatives", "backwards compatibility",
-                   "backward compatibility", "rationale"]
+# keywords that indicate a section is worth classifying
+TARGET_KEYWORDS = ["rejected", "backwards compat", "backward compat"]
+
+
+def _is_target_section(section_name: str) -> bool:
+    """Check if a section name is one we want to classify."""
+    name = section_name.lower()
+    return any(kw in name for kw in TARGET_KEYWORDS)
 
 
 def extract_classified(sections_by_pep: dict[int, dict[str, str]]) -> dict[int, ExtractionResult]:
@@ -205,7 +210,7 @@ def extract_classified(sections_by_pep: dict[int, dict[str, str]]) -> dict[int, 
         all_objections = []
 
         for section_name, text in sections.items():
-            if section_name not in TARGET_SECTIONS:
+            if not _is_target_section(section_name):
                 continue
             if len(text.strip()) < 50:  # skip trivially short sections
                 continue
