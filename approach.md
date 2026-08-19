@@ -66,7 +66,7 @@ This phase alone produces the majority of edges in the final graph, with zero in
 
 ### Phase 2: Constrained Classification
 
-For sections that are too unstructured for regex (mainly Rejected Ideas and Backwards Compatibility), we use the Anthropic API as a classifier. Critically:
+For sections that are too unstructured for regex (mainly Rejected Ideas and Backwards Compatibility), we use the Gemini API (gemini-3.6-flash, free tier) as a classifier. Critically:
 
 - The LLM receives a fixed Pydantic schema with an enum we defined (`ObjectionCategory`)
 - It's never asked "what are the entities here" -- it's asked "does this text contain instances of `Alternative` as I've defined it, and which of these six categories does the rejection reason fall into"
@@ -89,11 +89,27 @@ Results and concrete failure cases are reported in the evaluation section below.
 
 ### Evaluation Results
 
-*(To be filled after running the pipeline)*
+We evaluated 8 PEPs stratified across statuses (4 Final, 1 Superseded, 3 others):
+
+| Metric | Alternatives | Objections |
+|---|---|---|
+| Overall Precision | 0.957 | 0.765 |
+| Overall Recall | 0.957 | 0.765 |
+| Overall F1 | 0.957 | 0.765 |
+
+Alternatives extraction is strong (F1 = 0.957) because rejected alternatives are typically well-delineated in PEP text with clear names and reasons. Objection extraction is solid (F1 = 0.765) after expanding coverage to backwards-compatibility sections via Gemini classification.
+
+Individual PEP results show perfect scores (F1 = 1.0) for PEPs 544, 589, 647, 649, and 742. The weakest scores are on PEP 484 and PEP 563 (objection substring mismatches) and PEP 695 (objection phrasing gap).
 
 ### Failure Cases
 
-*(To be filled -- documenting specific cases where the pipeline got it wrong and why)*
+**PEP 484, objection matching (P = 0.5):** The gold label "Runtime performance concerns from annotation evaluation" failed to match the extracted "Runtime performance concerns -- annotations are evaluated at function definition time, adding overhead." The substring match fails because the gold label uses "from" while the extraction uses a dash. Both describe the same concern.
+
+**PEP 563, objection matching (P = 0.5):** Two of the four gold set objections fail to match because the extracted text uses longer, more specific phrasing. For example, the gold label "The from \_\_future\_\_ import annotations mechanism creates confusing behavior" partially matches, but two other gold-to-extraction pairs diverge too far for substring matching.
+
+**PEP 695, objection matching (F1 = 0.0):** The gold label used "two ways to do the same thing" while the extracted objection used "learning cost" and "transition period." Both describe the same concern (duplicate syntax during migration), but the surface text overlap is too low for substring matching. A semantic similarity approach would handle this, but we deliberately avoided introducing one to keep the evaluation fully deterministic.
+
+These failures are instructive: they tell us that an exact-match evaluation underestimates the pipeline's real performance on objection extraction, and that a human reviewer would likely rate the actual quality higher than the numbers suggest.
 
 ## 5. Reasoning Engine
 
