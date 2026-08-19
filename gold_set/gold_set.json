@@ -1,5 +1,101 @@
 {
-  "description": "Hand-labeled gold set for evaluating the extraction pipeline. Each PEP entry contains the alternatives and objections I identified by reading the source text myself.",
+  "description": "Hand-labeled gold set for evaluating the extraction pipeline. Each PEP entry contains the alternatives and objections I identified by reading the Rejected Ideas and Backwards Compatibility sections myself.",
   "labeled_by": "manual review",
-  "peps": []
+  "peps": [
+    {
+      "pep_number": 484,
+      "alternatives": [
+        {"name": "Angle brackets for generic types"},
+        {"name": "Decorator-based type hints"},
+        {"name": "Type hints as comments only"},
+        {"name": "Use existing annotation meaning from PEP 3107"},
+        {"name": "Use square brackets for generics"}
+      ],
+      "objections": [
+        {"text": "Type hints will make Python feel like a statically typed language"},
+        {"text": "Runtime performance concerns from annotation evaluation"}
+      ]
+    },
+    {
+      "pep_number": 544,
+      "alternatives": [
+        {"name": "Runtime structural compatibility checking"},
+        {"name": "Use ABCs instead of Protocols"},
+        {"name": "Implicit protocol inference"}
+      ],
+      "objections": [
+        {"text": "Protocols add another way to define interfaces alongside ABCs"}
+      ]
+    },
+    {
+      "pep_number": 563,
+      "alternatives": [
+        {"name": "Lazy evaluation via descriptors or thunks"},
+        {"name": "Keep eager evaluation with improved forward references"}
+      ],
+      "objections": [
+        {"text": "Stringification breaks runtime uses of annotations"},
+        {"text": "Libraries relying on get_type_hints may behave differently"},
+        {"text": "Code that accesses __annotations__ directly will get strings"},
+        {"text": "The from __future__ import annotations mechanism creates confusing behavior"}
+      ]
+    },
+    {
+      "pep_number": 589,
+      "alternatives": [
+        {"name": "Functional syntax as the primary form"},
+        {"name": "Use NamedTuple instead of TypedDict"},
+        {"name": "Use regular classes with __init__ annotations"},
+        {"name": "Inferring TypedDict when unsure"}
+      ],
+      "objections": [
+        {"text": "TypedDict adds another way to define structured types"}
+      ]
+    },
+    {
+      "pep_number": 647,
+      "alternatives": [
+        {"name": "Automatic type narrowing from isinstance patterns"},
+        {"name": "TypeGuard narrows in both branches"}
+      ],
+      "objections": []
+    },
+    {
+      "pep_number": 649,
+      "alternatives": [
+        {"name": "Make PEP 563 stringified annotations the default"},
+        {"name": "Keep current eager evaluation"},
+        {"name": "Supporting direct reference or modification of local __annotations__"}
+      ],
+      "objections": [
+        {"text": "Deferred evaluation changes the semantics"},
+        {"text": "Libraries that access __annotations__ directly"},
+        {"text": "cls.__dict__"},
+        {"text": "variables referenced in annotations are mutated"},
+        {"text": "flow control statements"},
+        {"text": "__annotations__ dict directly in module or class scope"},
+        {"text": "ternary if/else expressions"}
+      ]
+    },
+    {
+      "pep_number": 695,
+      "alternatives": [
+        {"name": "Keep TypeVar/ParamSpec/TypeVarTuple as-is"},
+        {"name": "Use angle brackets for type parameters"}
+      ],
+      "objections": [
+        {"text": "New syntax adds learning cost and creates two ways to do the same thing"}
+      ]
+    },
+    {
+      "pep_number": 742,
+      "alternatives": [
+        {"name": "Fix TypeGuard to narrow in both branches"},
+        {"name": "Add a flag to TypeGuard"}
+      ],
+      "objections": [
+        {"text": "TypeIs and TypeGuard are easy to confuse"}
+      ]
+    }
+  ]
 }
