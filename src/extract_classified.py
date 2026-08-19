@@ -7,7 +7,7 @@ type is. We define the schema (ObjectionCategory enum, ExtractedAlternative
 model), and the LLM slots text into those pre-defined categories. It's a
 fuzzy classifier, not a knowledge extractor.
 
-Requires ANTHROPIC_API_KEY env var. Results are cached to disk so the
+Requires GEMINI_API_KEY env var. Results are cached to disk so the
 pipeline only calls the API once per PEP section.
 """
 
@@ -128,7 +128,7 @@ def classify_section(pep_number: int, section_name: str, text: str,
                      use_cache: bool = True) -> dict:
     """Run constrained classification on a PEP section.
 
-    Checks cache first. If not cached, calls the Anthropic API with
+    Checks cache first. If not cached, calls the Gemini API with
     our pre-defined schema and worked examples.
     """
     if use_cache:
@@ -137,33 +137,28 @@ def classify_section(pep_number: int, section_name: str, text: str,
             return cached
 
     # check for API key
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         print(f"  skipping LLM classification for PEP {pep_number}/{section_name} "
-              f"-- no ANTHROPIC_API_KEY set")
+              f"-- no GEMINI_API_KEY set")
         return {"alternatives": [], "objections": []}
 
-    import anthropic
+    import google.generativeai as genai
 
-    client = anthropic.Anthropic(api_key=api_key)
+    genai.configure(api_key=api_key)
+    model = genai.GenerativeModel("gemini-3.6-flash")
 
     prompt = CLASSIFICATION_PROMPT.format(
         pep_number=pep_number,
         section_name=section_name,
-        text=text[:4000],  # truncate very long sections
+        text=text[:6000],  # gemini handles longer context well
     )
 
     try:
-        response = client.messages.create(
-            model="claude-sonnet-4-20250514",
-            max_tokens=2000,
-            messages=[{"role": "user", "content": prompt}],
-        )
+        response = model.generate_content(prompt)
+        raw_response = response.text.strip()
 
-        raw_response = response.content[0].text.strip()
-
-        # try to parse JSON from the response
-        # sometimes the model wraps it in markdown code blocks
+        # strip markdown code fences if the model wraps its output
         if raw_response.startswith("```"):
             raw_response = raw_response.split("```")[1]
             if raw_response.startswith("json"):
@@ -176,7 +171,7 @@ def classify_section(pep_number: int, section_name: str, text: str,
         print(f"  warning: failed to parse LLM output for PEP {pep_number}/{section_name}: {e}")
         result = {"alternatives": [], "objections": []}
     except Exception as e:
-        print(f"  error calling API for PEP {pep_number}/{section_name}: {e}")
+        print(f"  error calling Gemini API for PEP {pep_number}/{section_name}: {e}")
         result = {"alternatives": [], "objections": []}
 
     # cache the result either way
@@ -184,6 +179,7 @@ def classify_section(pep_number: int, section_name: str, text: str,
         _save_cache(pep_number, section_name, result)
 
     return result
+
 
 
 # ---------------------------------------------------------------------------

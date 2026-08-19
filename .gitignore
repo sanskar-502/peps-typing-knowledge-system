@@ -26,3 +26,6 @@ Thumbs.db
 
 # don't track the full cloned peps repo, just our filtered subset
 data/peps-repo/
+
+# personal notes
+interview_prep.md
