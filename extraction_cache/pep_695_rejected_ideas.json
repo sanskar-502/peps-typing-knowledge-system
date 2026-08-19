@@ -1,0 +1,23 @@
+{
+  "alternatives": [
+    {
+      "name": "Keep TypeVar/ParamSpec/TypeVarTuple as-is",
+      "description": "Continue using the existing TypeVar('T'), ParamSpec('P') syntax without new language syntax.",
+      "reason_rejected": "The existing syntax requires redundant name repetition (T = TypeVar('T')), is verbose for simple cases, and doesn't support scoping type variables to their usage site.",
+      "reason_category": "complexity"
+    },
+    {
+      "name": "Use angle brackets for type parameters",
+      "description": "Use class Foo<T>: syntax similar to Java/C#/TypeScript.",
+      "reason_rejected": "Angle brackets conflict with comparison operators in Python's grammar. The [T] syntax in class Foo[T]: is unambiguous and consistent with subscription syntax.",
+      "reason_category": "ambiguity"
+    }
+  ],
+  "objections": [
+    {
+      "text": "New syntax for something already expressible adds learning cost and creates two ways to do the same thing during a long transition period.",
+      "category": "complexity",
+      "source_section": "rejected ideas"
+    }
+  ]
+}

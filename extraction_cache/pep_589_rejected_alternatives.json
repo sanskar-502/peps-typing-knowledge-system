@@ -1,0 +1,29 @@
+{
+  "alternatives": [
+    {
+      "name": "Functional syntax as the primary form",
+      "description": "Use Point2D = TypedDict('Point2D', x=int, y=int) as the only way to define TypedDicts, without the class-based syntax.",
+      "reason_rejected": "The functional form is harder for static type checkers to analyze and doesn't support inheritance or method definitions.",
+      "reason_category": "ambiguity"
+    },
+    {
+      "name": "Use NamedTuple instead of TypedDict",
+      "description": "Use NamedTuple for all cases where structured data with typed fields is needed.",
+      "reason_rejected": "NamedTuples are immutable and create new objects. TypedDict describes plain dicts which are mutable and already widely used in Python codebases, especially for JSON data.",
+      "reason_category": "precedent_conflict"
+    },
+    {
+      "name": "Use regular classes with __init__ annotations",
+      "description": "Define typed dictionary-like objects as regular classes with annotated __init__ parameters.",
+      "reason_rejected": "This doesn't match the actual runtime type (dict). TypedDict specifically describes the structure of plain dict objects.",
+      "reason_category": "complexity"
+    }
+  ],
+  "objections": [
+    {
+      "text": "TypedDict adds another way to define structured types alongside dataclasses, NamedTuple, and regular classes, increasing cognitive load.",
+      "category": "complexity",
+      "source_section": "rejected alternatives"
+    }
+  ]
+}

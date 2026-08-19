@@ -1,0 +1,17 @@
+{
+  "alternatives": [
+    {
+      "name": "Enum-based literal types",
+      "description": "Use Python enums to represent literal types instead of introducing Literal[].",
+      "reason_rejected": "Enums require defining a new class for every set of literal values. Literal[] is more lightweight for ad-hoc value constraints.",
+      "reason_category": "complexity"
+    },
+    {
+      "name": "Support mutable literal values",
+      "description": "Allow Literal types to include mutable values like lists or dicts.",
+      "reason_rejected": "Mutable values don't have a stable identity. Literal types must be restricted to immutable, hashable values to maintain type system soundness.",
+      "reason_category": "ambiguity"
+    }
+  ],
+  "objections": []
+}

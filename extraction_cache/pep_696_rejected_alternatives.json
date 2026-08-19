@@ -1,0 +1,11 @@
+{
+  "alternatives": [
+    {
+      "name": "Use overloads instead of defaults",
+      "description": "Define overloads for each combination of provided and omitted type parameters.",
+      "reason_rejected": "Combinatorial explosion -- a generic with 3 parameters each with a default would need 8 overloads. Defaults are a more scalable solution.",
+      "reason_category": "complexity"
+    }
+  ],
+  "objections": []
+}

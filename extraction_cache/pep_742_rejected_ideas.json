@@ -1,0 +1,23 @@
+{
+  "alternatives": [
+    {
+      "name": "Fix TypeGuard to narrow in both branches",
+      "description": "Modify the existing TypeGuard (PEP 647) to also narrow the type in the else branch instead of introducing a new form.",
+      "reason_rejected": "Changing TypeGuard's semantics would break existing code that relies on the current one-sided narrowing behavior. A new form (TypeIs) with stricter requirements is safer.",
+      "reason_category": "backward_compat"
+    },
+    {
+      "name": "Add a flag to TypeGuard",
+      "description": "Add a parameter like TypeGuard[X, narrow_negative=True] to opt into both-branch narrowing.",
+      "reason_rejected": "Parameterized behavior on a type form is unusual in Python's type system and harder for type checkers to implement consistently.",
+      "reason_category": "complexity"
+    }
+  ],
+  "objections": [
+    {
+      "text": "TypeIs and TypeGuard are easy to confuse. Having two similar but subtly different type narrowing mechanisms increases cognitive load.",
+      "category": "complexity",
+      "source_section": "rejected ideas"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "alternatives": [
+    {
+      "name": "Use *args and **kwargs types separately",
+      "description": "Instead of ParamSpec, type decorators by separately typing *args and **kwargs.",
+      "reason_rejected": "Separating args and kwargs loses the relationship between a callable's full parameter signature. ParamSpec captures the entire signature as a unit.",
+      "reason_category": "complexity"
+    }
+  ],
+  "objections": [
+    {
+      "text": "ParamSpec introduces significant conceptual complexity for a feature most developers won't directly use.",
+      "category": "complexity",
+      "source_section": "rejected alternatives"
+    }
+  ]
+}

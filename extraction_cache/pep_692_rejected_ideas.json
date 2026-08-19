@@ -1,0 +1,17 @@
+{
+  "alternatives": [
+    {
+      "name": "Use individual keyword argument annotations",
+      "description": "Type each **kwargs key individually using some inline syntax.",
+      "reason_rejected": "No clean syntax exists for annotating individual keys in **kwargs. TypedDict already provides per-key typing and is well understood.",
+      "reason_category": "complexity"
+    }
+  ],
+  "objections": [
+    {
+      "text": "Using TypedDict for **kwargs blurs the line between dictionary types and function signatures, which may confuse users.",
+      "category": "ambiguity",
+      "source_section": "rejected ideas"
+    }
+  ]
+}

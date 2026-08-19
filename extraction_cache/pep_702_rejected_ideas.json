@@ -1,0 +1,17 @@
+{
+  "alternatives": [
+    {
+      "name": "Use runtime warnings.warn only",
+      "description": "Continue using only runtime DeprecationWarning via warnings.warn() without type-level support.",
+      "reason_rejected": "Runtime warnings are only triggered when deprecated code actually executes. Type-level deprecation catches usage at analysis time, before the code runs.",
+      "reason_category": "out_of_scope"
+    }
+  ],
+  "objections": [
+    {
+      "text": "Adding deprecation to the type system mixes runtime lifecycle concerns with static type information.",
+      "category": "precedent_conflict",
+      "source_section": "rejected ideas"
+    }
+  ]
+}

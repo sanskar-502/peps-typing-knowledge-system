@@ -1,0 +1,28 @@
+{
+  "alternatives": [
+    {
+      "name": "Make PEP 563 (stringified annotations) the default",
+      "description": "Proceed with PEP 563's plan to make 'from __future__ import annotations' the default behavior, stringifying all annotations.",
+      "reason_rejected": "PEP 563's stringification broke runtime introspection for many libraries (dataclasses, attrs, Pydantic, FastAPI). The backward compatibility cost was too high.",
+      "reason_category": "backward_compat"
+    },
+    {
+      "name": "Keep current eager evaluation",
+      "description": "Don't change annotation evaluation semantics at all, keep evaluating at function definition time.",
+      "reason_rejected": "Forward reference problems remain unsolved. Annotations that reference not-yet-defined names continue to require awkward string quoting.",
+      "reason_category": "complexity"
+    }
+  ],
+  "objections": [
+    {
+      "text": "Deferred evaluation changes the semantics of __annotations__ from a simple dict of evaluated objects to a more complex lazy-evaluation mechanism.",
+      "category": "complexity",
+      "source_section": "backwards compatibility with pep 563 semantics"
+    },
+    {
+      "text": "Libraries that access __annotations__ directly (rather than via get_type_hints) may need to update their code.",
+      "category": "backward_compat",
+      "source_section": "backwards compatibility with stock semantics"
+    }
+  ]
+}

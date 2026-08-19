@@ -1,0 +1,17 @@
+{
+  "alternatives": [
+    {
+      "name": "Require libraries to use dataclass directly",
+      "description": "Instead of dataclass_transform, require all dataclass-like libraries (attrs, Pydantic) to use @dataclass internally.",
+      "reason_rejected": "These libraries have different semantics and features that don't map cleanly to @dataclass. Forcing them into that mold would limit their functionality.",
+      "reason_category": "precedent_conflict"
+    },
+    {
+      "name": "Per-library type checker plugins",
+      "description": "Let each library maintain its own type checker plugin (mypy plugin, pyright plugin) for special handling.",
+      "reason_rejected": "Plugins are fragile, hard to maintain across type checker versions, and create an uneven experience. A standard decorator provides a stable interface.",
+      "reason_category": "complexity"
+    }
+  ],
+  "objections": []
+}

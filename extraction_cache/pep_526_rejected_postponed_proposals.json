@@ -1,0 +1,17 @@
+{
+  "alternatives": [
+    {
+      "name": "Use type comments for all variable annotations",
+      "description": "Continue using '# type: X' comments for variable annotations instead of introducing new syntax.",
+      "reason_rejected": "Comments are invisible to the runtime and tooling. A proper syntax makes annotations part of the language semantics.",
+      "reason_category": "complexity"
+    },
+    {
+      "name": "Introduce a new keyword like 'var'",
+      "description": "Use 'var x: int = 5' syntax with a new keyword for variable declarations.",
+      "reason_rejected": "Adding a new keyword would break existing code that uses 'var' as a variable name. Too disruptive for the ecosystem.",
+      "reason_category": "backward_compat"
+    }
+  ],
+  "objections": []
+}

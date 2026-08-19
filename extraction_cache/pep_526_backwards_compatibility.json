@@ -1,0 +1,10 @@
+{
+  "alternatives": [],
+  "objections": [
+    {
+      "text": "The new annotation syntax x: int = 5 might be confused with assignment, especially by newcomers.",
+      "category": "ambiguity",
+      "source_section": "backwards compatibility"
+    }
+  ]
+}

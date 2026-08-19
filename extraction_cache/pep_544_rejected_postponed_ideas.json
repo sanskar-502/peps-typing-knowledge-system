@@ -1,0 +1,29 @@
+{
+  "alternatives": [
+    {
+      "name": "Runtime structural compatibility checking",
+      "description": "Make isinstance() checks perform full structural comparison for Protocol types at runtime.",
+      "reason_rejected": "Deep structural comparison on every isinstance call would be extremely expensive. The cost is proportional to the complexity of the protocol.",
+      "reason_category": "performance"
+    },
+    {
+      "name": "Use ABCs instead of Protocols",
+      "description": "Continue using Abstract Base Classes for structural subtyping via __subclasshook__.",
+      "reason_rejected": "ABCs require explicit registration or inheritance. Protocols capture duck typing patterns that ABCs cannot express without modifying the checked class.",
+      "reason_category": "complexity"
+    },
+    {
+      "name": "Implicit protocol inference",
+      "description": "Let type checkers automatically infer protocols from usage patterns without explicit Protocol definitions.",
+      "reason_rejected": "Implicit protocols make it impossible to distinguish intentional structural contracts from coincidental method overlap. Explicit is better than implicit.",
+      "reason_category": "ambiguity"
+    }
+  ],
+  "objections": [
+    {
+      "text": "Protocols add another way to define interfaces alongside ABCs, increasing the conceptual surface of the type system.",
+      "category": "complexity",
+      "source_section": "rejected/postponed ideas"
+    }
+  ]
+}

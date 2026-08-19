@@ -1,0 +1,23 @@
+{
+  "alternatives": [
+    {
+      "name": "Use overloads for each arity",
+      "description": "Define separate overloads for each possible number of type parameters instead of variadic generics.",
+      "reason_rejected": "This approach doesn't scale. A generic type with N parameters would need infinite overloads to cover all cases.",
+      "reason_category": "complexity"
+    },
+    {
+      "name": "Map/zip operations on TypeVarTuples",
+      "description": "Support element-wise type operations on variadic generics, similar to mapped types in TypeScript.",
+      "reason_rejected": "Deferred to a future PEP. The complexity of type-level map/zip operations is significant and the use cases need more exploration.",
+      "reason_category": "out_of_scope"
+    }
+  ],
+  "objections": [
+    {
+      "text": "Variadic generics add substantial complexity to the type system for a relatively niche use case (primarily tensor shapes in NumPy/ML).",
+      "category": "complexity",
+      "source_section": "rationale and rejected ideas"
+    }
+  ]
+}

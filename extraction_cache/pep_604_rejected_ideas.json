@@ -1,0 +1,17 @@
+{
+  "alternatives": [
+    {
+      "name": "Keep Union[X, Y] as the only syntax",
+      "description": "Continue using Union[X, Y] from typing module for union types.",
+      "reason_rejected": "Union[X, Y] is verbose and requires importing from typing. The | operator is more intuitive and consistent with set-theoretic type notation.",
+      "reason_category": "complexity"
+    },
+    {
+      "name": "Use 'or' keyword for unions",
+      "description": "Use 'int or str' syntax for union types using the 'or' keyword.",
+      "reason_rejected": "The 'or' keyword is already a boolean operator. Overloading it for type expressions would create parsing ambiguity and confusion.",
+      "reason_category": "ambiguity"
+    }
+  ],
+  "objections": []
+}

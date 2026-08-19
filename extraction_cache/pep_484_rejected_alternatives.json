@@ -1,0 +1,46 @@
+{
+  "alternatives": [
+    {
+      "name": "Use square brackets for generics",
+      "description": "Use List[int] style square bracket syntax by overloading __getitem__ on classes in typing module.",
+      "reason_rejected": "Actually adopted -- this was chosen over angle brackets (List<int>) because Python's parser cannot handle angle brackets without ambiguity with comparison operators.",
+      "reason_category": "ambiguity"
+    },
+    {
+      "name": "Angle brackets for generic types",
+      "description": "Use C++/Java-style angle brackets like List<int> for generic type parameters.",
+      "reason_rejected": "Python's parser treats < and > as comparison operators. Introducing them as brackets would require deep parser changes and create ambiguity.",
+      "reason_category": "complexity"
+    },
+    {
+      "name": "Decorator-based type hints",
+      "description": "Use decorators instead of annotations to specify types, e.g. @types(int, returns=str).",
+      "reason_rejected": "More verbose, less readable, and doesn't integrate with the existing PEP 3107 annotation syntax that was already in the language.",
+      "reason_category": "precedent_conflict"
+    },
+    {
+      "name": "Type hints as comments only",
+      "description": "Put all type information in comments rather than annotations, relying entirely on # type: comments.",
+      "reason_rejected": "Comments are not programmatically accessible at runtime. Annotations provide a structured, inspectable mechanism.",
+      "reason_category": "complexity"
+    },
+    {
+      "name": "Use existing annotation meaning from PEP 3107",
+      "description": "Keep annotations free-form as in PEP 3107 rather than standardizing them for type hints.",
+      "reason_rejected": "The community needed a shared vocabulary for static analysis. Free-form annotations had led to fragmented, incompatible uses.",
+      "reason_category": "ambiguity"
+    }
+  ],
+  "objections": [
+    {
+      "text": "Type hints will make Python feel like a statically typed language and go against its dynamic nature.",
+      "category": "precedent_conflict",
+      "source_section": "rejected alternatives"
+    },
+    {
+      "text": "Runtime performance concerns -- annotations are evaluated at function definition time, adding overhead.",
+      "category": "performance",
+      "source_section": "rejected alternatives"
+    }
+  ]
+}

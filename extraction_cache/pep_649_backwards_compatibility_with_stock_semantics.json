@@ -1,0 +1,37 @@
+{
+  "alternatives": [
+    {
+      "name": "Supporting direct reference or modification of local __annotations__ dict in module/class scope",
+      "description": "Allow code in module or class scope to directly reference or modify the local __annotations__ dict under delayed evaluation.",
+      "reason_rejected": "Supporting this would produce surprising semantics that would not satisfy users.",
+      "reason_category": "ambiguity"
+    }
+  ],
+  "objections": [
+    {
+      "text": "Accessing class annotations via cls.__dict__.get('__annotations__', {}) breaks if __annotate__ has not yet been called and cached.",
+      "category": "backward_compat",
+      "source_section": "backwards compatibility with stock semantics"
+    },
+    {
+      "text": "Delaying annotation evaluation changes program semantics if variables referenced in annotations are mutated between definition time and access time.",
+      "category": "backward_compat",
+      "source_section": "backwards compatibility with stock semantics"
+    },
+    {
+      "text": "Setting annotations on module or class attributes inside flow control statements (such as if or try) is no longer supported.",
+      "category": "backward_compat",
+      "source_section": "backwards compatibility with stock semantics"
+    },
+    {
+      "text": "Referencing or modifying the local __annotations__ dict directly in module or class scope is no longer supported and results in undefined behavior.",
+      "category": "backward_compat",
+      "source_section": "backwards compatibility with stock semantics"
+    },
+    {
+      "text": "Annotation values containing ternary if/else expressions may not compute correctly when evaluated with inspect.FORWARDREF or inspect.SOURCE.",
+      "category": "ambiguity",
+      "source_section": "backwards compatibility with stock semantics"
+    }
+  ]
+}

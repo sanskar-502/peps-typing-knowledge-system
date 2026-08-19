@@ -1,0 +1,17 @@
+{
+  "alternatives": [
+    {
+      "name": "Use TypeVar bound to the class",
+      "description": "Define T = TypeVar('T', bound='MyClass') and use it as the return type for methods that return self.",
+      "reason_rejected": "Requires boilerplate TypeVar declaration for every class. Self is a common enough pattern to warrant dedicated syntax.",
+      "reason_category": "complexity"
+    },
+    {
+      "name": "Implicit Self inference",
+      "description": "Let type checkers automatically infer Self return types for methods that return self.",
+      "reason_rejected": "Not all methods returning self should be typed as Self (some might return a fixed base class). Explicit is better than implicit.",
+      "reason_category": "ambiguity"
+    }
+  ],
+  "objections": []
+}

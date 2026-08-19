@@ -1,0 +1,17 @@
+{
+  "alternatives": [
+    {
+      "name": "Use total=True/False with per-key overrides",
+      "description": "Keep the existing total parameter but add per-key override markers inline.",
+      "reason_rejected": "The total parameter already provides a default, but mixing it with per-key overrides in the same class creates confusing interactions.",
+      "reason_category": "ambiguity"
+    },
+    {
+      "name": "Use Optional[] for not-required keys",
+      "description": "Reuse Optional[T] to mean 'this key may be absent' in TypedDict.",
+      "reason_rejected": "Optional means 'T or None', not 'key may be absent'. Conflating the two loses the distinction between a key that's present with value None and a key that's missing.",
+      "reason_category": "ambiguity"
+    }
+  ],
+  "objections": []
+}

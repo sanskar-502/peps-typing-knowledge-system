@@ -1,0 +1,15 @@
+{
+  "alternatives": [],
+  "objections": [
+    {
+      "text": "Code that accesses __annotations__ directly will get strings instead of types, breaking introspection-based frameworks.",
+      "category": "backward_compat",
+      "source_section": "backwards compatibility"
+    },
+    {
+      "text": "The from __future__ import annotations mechanism creates a per-module opt-in that can cause confusing behavior at module boundaries.",
+      "category": "ambiguity",
+      "source_section": "backwards compatibility"
+    }
+  ]
+}

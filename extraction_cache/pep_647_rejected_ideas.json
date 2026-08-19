@@ -1,0 +1,17 @@
+{
+  "alternatives": [
+    {
+      "name": "Automatic type narrowing from isinstance patterns",
+      "description": "Have type checkers infer type guards automatically from isinstance() and similar patterns without explicit annotations.",
+      "reason_rejected": "Already done for isinstance/issubclass, but custom functions with complex logic can't be auto-inferred. TypeGuard fills the gap for user-defined narrowing.",
+      "reason_category": "complexity"
+    },
+    {
+      "name": "TypeGuard narrows in both branches",
+      "description": "If TypeGuard returns True, narrow to the guarded type; if False, narrow to the complement.",
+      "reason_rejected": "The negative case is not always safe. A function might return False for reasons unrelated to type. This was later revisited in PEP 742 (TypeIs) with stricter semantics.",
+      "reason_category": "ambiguity"
+    }
+  ],
+  "objections": []
+}

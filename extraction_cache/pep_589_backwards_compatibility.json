@@ -1,0 +1,11 @@
+{
+  "alternatives": [
+    {
+      "name": "Inferring TypedDict when unsure",
+      "description": "Inferring a TypedDict type for dictionaries when it is not explicitly clear that a TypedDict is desired by the programmer.",
+      "reason_rejected": "Existing code that type checks without errors may start generating errors once TypedDict support is added, because TypedDict types are more restrictive than ordinary dictionary types and are not subtypes of dictionary types.",
+      "reason_category": "backward_compat"
+    }
+  ],
+  "objections": []
+}

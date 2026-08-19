@@ -1,0 +1,17 @@
+{
+  "alternatives": [
+    {
+      "name": "Use comments or naming conventions",
+      "description": "Mark overrides with comments like # override or naming conventions.",
+      "reason_rejected": "Comments aren't checkable by type checkers. A decorator provides a machine-verifiable contract that the method actually overrides something in a parent class.",
+      "reason_category": "ambiguity"
+    },
+    {
+      "name": "Implicit override detection",
+      "description": "Let type checkers automatically detect overrides by comparing method names with parent classes.",
+      "reason_rejected": "Accidental overrides (naming collisions) would go undetected. Explicit @override makes the intent clear and catches cases where the parent method is removed or renamed.",
+      "reason_category": "ambiguity"
+    }
+  ],
+  "objections": []
+}

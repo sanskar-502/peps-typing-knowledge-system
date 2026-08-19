@@ -1,0 +1,17 @@
+{
+  "alternatives": [
+    {
+      "name": "Use Final for read-only TypedDict items",
+      "description": "Reuse Final[] to mark TypedDict items as read-only.",
+      "reason_rejected": "Final means 'cannot be reassigned' in variable context, but TypedDict items aren't variables. ReadOnly is a clearer semantic for dict items that shouldn't be modified.",
+      "reason_category": "ambiguity"
+    },
+    {
+      "name": "Immutable TypedDict variant",
+      "description": "Create a FrozenTypedDict that makes all items read-only at once.",
+      "reason_rejected": "Per-item control is more flexible. Some items may need to be mutable while others are read-only in the same dict type.",
+      "reason_category": "complexity"
+    }
+  ],
+  "objections": []
+}

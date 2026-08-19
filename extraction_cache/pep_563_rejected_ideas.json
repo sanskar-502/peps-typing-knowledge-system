@@ -1,0 +1,28 @@
+{
+  "alternatives": [
+    {
+      "name": "Lazy evaluation via descriptors or thunks",
+      "description": "Instead of stringifying annotations, evaluate them lazily on first access using a descriptor protocol or thunk mechanism.",
+      "reason_rejected": "Considered too complex for the initial implementation. The stringification approach was simpler and addressed the forward reference problem directly.",
+      "reason_category": "complexity"
+    },
+    {
+      "name": "Keep eager evaluation with improved forward references",
+      "description": "Keep evaluating annotations at definition time but improve the string-based forward reference mechanism.",
+      "reason_rejected": "The fundamental problem is that annotations are evaluated too early, before referenced names are available. String workarounds are fragile and inconsistent.",
+      "reason_category": "complexity"
+    }
+  ],
+  "objections": [
+    {
+      "text": "Stringification breaks runtime uses of annotations that expect actual type objects, including dataclasses, attrs, and Pydantic.",
+      "category": "backward_compat",
+      "source_section": "rejected ideas"
+    },
+    {
+      "text": "Libraries relying on get_type_hints() may behave differently because stringified annotations require the correct global/local scope to resolve.",
+      "category": "backward_compat",
+      "source_section": "backwards compatibility"
+    }
+  ]
+}

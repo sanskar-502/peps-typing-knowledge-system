@@ -1,0 +1,17 @@
+{
+  "alternatives": [
+    {
+      "name": "Keep typing module wrappers indefinitely",
+      "description": "Continue using typing.List, typing.Dict etc. rather than allowing list[int], dict[str, int] directly.",
+      "reason_rejected": "The typing module duplicates built-in types unnecessarily. Direct subscription of built-in types is more natural and reduces import burden.",
+      "reason_category": "complexity"
+    }
+  ],
+  "objections": [
+    {
+      "text": "Deprecating typing.List etc. creates a migration burden for existing codebases with extensive type annotations.",
+      "category": "backward_compat",
+      "source_section": "rejected alternatives"
+    }
+  ]
+}

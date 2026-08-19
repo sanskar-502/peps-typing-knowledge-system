@@ -1,0 +1,23 @@
+{
+  "alternatives": [
+    {
+      "name": "Use Literal type with all possible values",
+      "description": "Use Literal['value1', 'value2', ...] to enumerate all safe string values.",
+      "reason_rejected": "Impractical for SQL queries, file paths, and other domains where the set of valid strings is unbounded. LiteralString captures the safety property (developer-written, not user-provided) without enumeration.",
+      "reason_category": "complexity"
+    },
+    {
+      "name": "Mark tainted strings instead of safe ones",
+      "description": "Use a Tainted[str] type to mark user-provided strings rather than marking safe ones.",
+      "reason_rejected": "Inverting the marking creates a larger annotation burden since most strings in a typical program are safe. Marking the safe case with LiteralString is more ergonomic.",
+      "reason_category": "complexity"
+    }
+  ],
+  "objections": [
+    {
+      "text": "LiteralString's safety guarantees are limited -- string concatenation of two LiteralStrings is still LiteralString, but f-strings with non-literal parts are not.",
+      "category": "ambiguity",
+      "source_section": "rejected alternatives"
+    }
+  ]
+}

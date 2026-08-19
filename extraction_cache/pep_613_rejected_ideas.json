@@ -1,0 +1,11 @@
+{
+  "alternatives": [
+    {
+      "name": "Infer type aliases from assignment context",
+      "description": "Let type checkers automatically determine whether an assignment is a type alias or a regular variable.",
+      "reason_rejected": "Ambiguous in many cases. x = int could be a type alias or a variable holding the int class. Explicit TypeAlias annotation removes the ambiguity.",
+      "reason_category": "ambiguity"
+    }
+  ],
+  "objections": []
+}

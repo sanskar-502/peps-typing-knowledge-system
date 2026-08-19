@@ -1,0 +1,11 @@
+{
+  "alternatives": [
+    {
+      "name": "Use ALL_CAPS convention instead of Final",
+      "description": "Rely on the PEP 8 convention of UPPER_CASE names for constants rather than adding a type-level qualifier.",
+      "reason_rejected": "Naming conventions are not enforceable by type checkers. Final provides a machine-checkable guarantee that a name won't be reassigned.",
+      "reason_category": "ambiguity"
+    }
+  ],
+  "objections": []
+}
