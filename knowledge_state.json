@@ -1,0 +1,4193 @@
+{
+  "metadata": {
+    "description": "Knowledge graph of Python typing PEPs (484-742)",
+    "scope": "29 PEPs covering the evolution of Python's type system",
+    "node_count": 144,
+    "edge_count": 545
+  },
+  "nodes": [
+    {
+      "id": "pep_483",
+      "type": "proposal",
+      "pep_number": 483,
+      "title": "The Theory of Type Hints",
+      "status": "final",
+      "pep_type": "informational",
+      "authors": [
+        "Guido van Rossum",
+        "Ivan Levkivskyi"
+      ],
+      "created_date": "19-Dec-2014",
+      "python_version": ""
+    },
+    {
+      "id": "pep_484",
+      "type": "proposal",
+      "pep_number": 484,
+      "title": "Type Hints",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Guido van Rossum",
+        "Jukka Lehtosalo",
+        "\u0141ukasz Langa"
+      ],
+      "created_date": "29-Sep-2014",
+      "python_version": "3.5"
+    },
+    {
+      "id": "pep_526",
+      "type": "proposal",
+      "pep_number": 526,
+      "title": "Syntax for Variable Annotations",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Ryan Gonzalez",
+        "Philip House",
+        "Ivan Levkivskyi",
+        "Lisa Roach",
+        "Guido van Rossum"
+      ],
+      "created_date": "09-Aug-2016",
+      "python_version": "3.6"
+    },
+    {
+      "id": "pep_544",
+      "type": "proposal",
+      "pep_number": 544,
+      "title": "Protocols: Structural subtyping (static duck typing)",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Ivan Levkivskyi",
+        "Jukka Lehtosalo",
+        "\u0141ukasz Langa"
+      ],
+      "created_date": "05-Mar-2017",
+      "python_version": "3.8"
+    },
+    {
+      "id": "pep_560",
+      "type": "proposal",
+      "pep_number": 560,
+      "title": "Core support for typing module and generic types",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Ivan Levkivskyi"
+      ],
+      "created_date": "03-Sep-2017",
+      "python_version": "3.7"
+    },
+    {
+      "id": "pep_561",
+      "type": "proposal",
+      "pep_number": 561,
+      "title": "Distributing and Packaging Type Information",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Emma Harper Smith"
+      ],
+      "created_date": "09-Sep-2017",
+      "python_version": "3.7"
+    },
+    {
+      "id": "pep_563",
+      "type": "proposal",
+      "pep_number": 563,
+      "title": "Postponed Evaluation of Annotations",
+      "status": "superseded",
+      "pep_type": "standards_track",
+      "authors": [
+        "\u0141ukasz Langa"
+      ],
+      "created_date": "08-Sep-2017",
+      "python_version": "3.7"
+    },
+    {
+      "id": "pep_585",
+      "type": "proposal",
+      "pep_number": 585,
+      "title": "Type Hinting Generics In Standard Collections",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "\u0141ukasz Langa"
+      ],
+      "created_date": "03-Mar-2019",
+      "python_version": "3.9"
+    },
+    {
+      "id": "pep_586",
+      "type": "proposal",
+      "pep_number": 586,
+      "title": "Literal Types",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Michael Lee",
+        "Ivan Levkivskyi",
+        "Jukka Lehtosalo"
+      ],
+      "created_date": "14-Mar-2019",
+      "python_version": "3.8"
+    },
+    {
+      "id": "pep_589",
+      "type": "proposal",
+      "pep_number": 589,
+      "title": "TypedDict: Type Hints for Dictionaries with a Fixed Set of Keys",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Jukka Lehtosalo"
+      ],
+      "created_date": "20-Mar-2019",
+      "python_version": "3.8"
+    },
+    {
+      "id": "pep_591",
+      "type": "proposal",
+      "pep_number": 591,
+      "title": "Adding a final qualifier to typing",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Michael J. Sullivan",
+        "Ivan Levkivskyi"
+      ],
+      "created_date": "15-Mar-2019",
+      "python_version": "3.8"
+    },
+    {
+      "id": "pep_593",
+      "type": "proposal",
+      "pep_number": 593,
+      "title": "Flexible function and variable annotations",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Till Varoquaux",
+        "Konstantin Kashin"
+      ],
+      "created_date": "26-Apr-2019",
+      "python_version": "3.9"
+    },
+    {
+      "id": "pep_604",
+      "type": "proposal",
+      "pep_number": 604,
+      "title": "Allow writing union types as ``X | Y``",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Philippe PRADOS",
+        "Maggie Moss"
+      ],
+      "created_date": "28-Aug-2019",
+      "python_version": "3.10"
+    },
+    {
+      "id": "pep_612",
+      "type": "proposal",
+      "pep_number": 612,
+      "title": "Parameter Specification Variables",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Mark Mendoza"
+      ],
+      "created_date": "18-Dec-2019",
+      "python_version": "3.10"
+    },
+    {
+      "id": "pep_613",
+      "type": "proposal",
+      "pep_number": 613,
+      "title": "Explicit Type Aliases",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Shannon Zhu"
+      ],
+      "created_date": "21-Jan-2020",
+      "python_version": "3.10"
+    },
+    {
+      "id": "pep_646",
+      "type": "proposal",
+      "pep_number": 646,
+      "title": "Variadic Generics",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Mark Mendoza",
+        "Matthew Rahtz",
+        "Pradeep Kumar Srinivasan",
+        "Vincent Siles"
+      ],
+      "created_date": "16-Sep-2020",
+      "python_version": "3.11"
+    },
+    {
+      "id": "pep_647",
+      "type": "proposal",
+      "pep_number": 647,
+      "title": "User-Defined Type Guards",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Eric Traut"
+      ],
+      "created_date": "07-Oct-2020",
+      "python_version": "3.10"
+    },
+    {
+      "id": "pep_649",
+      "type": "proposal",
+      "pep_number": 649,
+      "title": "Deferred Evaluation Of Annotations Using Descriptors",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Larry Hastings"
+      ],
+      "created_date": "11-Jan-2021",
+      "python_version": "3.14"
+    },
+    {
+      "id": "pep_655",
+      "type": "proposal",
+      "pep_number": 655,
+      "title": "Marking individual TypedDict items as required or potentially-missing",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "David Foster"
+      ],
+      "created_date": "30-Jan-2021",
+      "python_version": "3.11"
+    },
+    {
+      "id": "pep_673",
+      "type": "proposal",
+      "pep_number": 673,
+      "title": "Self Type",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Pradeep Kumar Srinivasan",
+        "James Hilton-Balfe"
+      ],
+      "created_date": "10-Nov-2021",
+      "python_version": "3.11"
+    },
+    {
+      "id": "pep_675",
+      "type": "proposal",
+      "pep_number": 675,
+      "title": "Arbitrary Literal String Type",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Pradeep Kumar Srinivasan",
+        "Graham Bleaney"
+      ],
+      "created_date": "30-Nov-2021",
+      "python_version": "3.11"
+    },
+    {
+      "id": "pep_681",
+      "type": "proposal",
+      "pep_number": 681,
+      "title": "Data Class Transforms",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Erik De Bonte",
+        "Eric Traut"
+      ],
+      "created_date": "02-Dec-2021",
+      "python_version": "3.11"
+    },
+    {
+      "id": "pep_692",
+      "type": "proposal",
+      "pep_number": 692,
+      "title": "Using TypedDict for more precise \\*\\*kwargs typing",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Franek Magiera"
+      ],
+      "created_date": "29-May-2022",
+      "python_version": "3.12"
+    },
+    {
+      "id": "pep_695",
+      "type": "proposal",
+      "pep_number": 695,
+      "title": "Type Parameter Syntax",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Eric Traut"
+      ],
+      "created_date": "15-Jun-2022",
+      "python_version": "3.12"
+    },
+    {
+      "id": "pep_696",
+      "type": "proposal",
+      "pep_number": 696,
+      "title": "Type Defaults for Type Parameters",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "James Hilton-Balfe"
+      ],
+      "created_date": "14-Jul-2022",
+      "python_version": "3.13"
+    },
+    {
+      "id": "pep_698",
+      "type": "proposal",
+      "pep_number": 698,
+      "title": "Override Decorator for Static Typing",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Steven Troxler",
+        "Joshua Xu",
+        "Shannon Zhu"
+      ],
+      "created_date": "05-Sep-2022",
+      "python_version": "3.12"
+    },
+    {
+      "id": "pep_702",
+      "type": "proposal",
+      "pep_number": 702,
+      "title": "Marking deprecations using the type system",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Jelle Zijlstra"
+      ],
+      "created_date": "30-Dec-2022",
+      "python_version": "3.13"
+    },
+    {
+      "id": "pep_705",
+      "type": "proposal",
+      "pep_number": 705,
+      "title": "TypedDict: Read-only items",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Alice Purcell"
+      ],
+      "created_date": "07-Nov-2022",
+      "python_version": "3.13"
+    },
+    {
+      "id": "pep_742",
+      "type": "proposal",
+      "pep_number": 742,
+      "title": "Narrowing types with TypeIs",
+      "status": "final",
+      "pep_type": "standards_track",
+      "authors": [
+        "Jelle Zijlstra"
+      ],
+      "created_date": "07-Feb-2024",
+      "python_version": "3.13"
+    },
+    {
+      "id": "person_alice_purcell",
+      "type": "person",
+      "name": "Alice Purcell"
+    },
+    {
+      "id": "person_david_foster",
+      "type": "person",
+      "name": "David Foster"
+    },
+    {
+      "id": "person_emma_harper_smith",
+      "type": "person",
+      "name": "Emma Harper Smith"
+    },
+    {
+      "id": "person_eric_traut",
+      "type": "person",
+      "name": "Eric Traut"
+    },
+    {
+      "id": "person_erik_de_bonte",
+      "type": "person",
+      "name": "Erik De Bonte"
+    },
+    {
+      "id": "person_franek_magiera",
+      "type": "person",
+      "name": "Franek Magiera"
+    },
+    {
+      "id": "person_graham_bleaney",
+      "type": "person",
+      "name": "Graham Bleaney"
+    },
+    {
+      "id": "person_guido_van_rossum",
+      "type": "person",
+      "name": "Guido van Rossum"
+    },
+    {
+      "id": "person_ivan_levkivskyi",
+      "type": "person",
+      "name": "Ivan Levkivskyi"
+    },
+    {
+      "id": "person_james_hilton-balfe",
+      "type": "person",
+      "name": "James Hilton-Balfe"
+    },
+    {
+      "id": "person_jelle_zijlstra",
+      "type": "person",
+      "name": "Jelle Zijlstra"
+    },
+    {
+      "id": "person_joshua_xu",
+      "type": "person",
+      "name": "Joshua Xu"
+    },
+    {
+      "id": "person_jukka_lehtosalo",
+      "type": "person",
+      "name": "Jukka Lehtosalo"
+    },
+    {
+      "id": "person_konstantin_kashin",
+      "type": "person",
+      "name": "Konstantin Kashin"
+    },
+    {
+      "id": "person_larry_hastings",
+      "type": "person",
+      "name": "Larry Hastings"
+    },
+    {
+      "id": "person_lisa_roach",
+      "type": "person",
+      "name": "Lisa Roach"
+    },
+    {
+      "id": "person_maggie_moss",
+      "type": "person",
+      "name": "Maggie Moss"
+    },
+    {
+      "id": "person_mark_mendoza",
+      "type": "person",
+      "name": "Mark Mendoza"
+    },
+    {
+      "id": "person_matthew_rahtz",
+      "type": "person",
+      "name": "Matthew Rahtz"
+    },
+    {
+      "id": "person_michael_j._sullivan",
+      "type": "person",
+      "name": "Michael J. Sullivan"
+    },
+    {
+      "id": "person_michael_lee",
+      "type": "person",
+      "name": "Michael Lee"
+    },
+    {
+      "id": "person_philip_house",
+      "type": "person",
+      "name": "Philip House"
+    },
+    {
+      "id": "person_philippe_prados",
+      "type": "person",
+      "name": "Philippe PRADOS"
+    },
+    {
+      "id": "person_pradeep_kumar_srinivasan",
+      "type": "person",
+      "name": "Pradeep Kumar Srinivasan"
+    },
+    {
+      "id": "person_ryan_gonzalez",
+      "type": "person",
+      "name": "Ryan Gonzalez"
+    },
+    {
+      "id": "person_shannon_zhu",
+      "type": "person",
+      "name": "Shannon Zhu"
+    },
+    {
+      "id": "person_steven_troxler",
+      "type": "person",
+      "name": "Steven Troxler"
+    },
+    {
+      "id": "person_till_varoquaux",
+      "type": "person",
+      "name": "Till Varoquaux"
+    },
+    {
+      "id": "person_vincent_siles",
+      "type": "person",
+      "name": "Vincent Siles"
+    },
+    {
+      "id": "person_\u0142ukasz_langa",
+      "type": "person",
+      "name": "\u0141ukasz Langa"
+    },
+    {
+      "id": "concept_gradual_typing",
+      "type": "concept",
+      "name": "Gradual Typing",
+      "description": "The idea that type hints are optional and don't affect runtime behavior",
+      "keywords": [
+        "gradual typing",
+        "optional type",
+        "type hint"
+      ]
+    },
+    {
+      "id": "concept_structural_subtyping",
+      "type": "concept",
+      "name": "Structural Subtyping",
+      "description": "Type compatibility based on structure rather than inheritance (Protocols)",
+      "keywords": [
+        "structural subtyp",
+        "protocol",
+        "duck typing"
+      ]
+    },
+    {
+      "id": "concept_union_types",
+      "type": "concept",
+      "name": "Union Types",
+      "description": "Representing a value that could be one of several types",
+      "keywords": [
+        "union",
+        "x | y",
+        "optional"
+      ]
+    },
+    {
+      "id": "concept_generic_types",
+      "type": "concept",
+      "name": "Generic Types",
+      "description": "Parameterized types that work across different contained types",
+      "keywords": [
+        "generic",
+        "typevar",
+        "paramspec",
+        "type parameter",
+        "typevartuple"
+      ]
+    },
+    {
+      "id": "concept_type_narrowing",
+      "type": "concept",
+      "name": "Type Narrowing",
+      "description": "Refining a type within a conditional branch (type guards, TypeIs)",
+      "keywords": [
+        "type guard",
+        "narrowing",
+        "typeis",
+        "isinstance"
+      ]
+    },
+    {
+      "id": "concept_annotation_evaluation",
+      "type": "concept",
+      "name": "Annotation Evaluation",
+      "description": "When and how type annotations are evaluated at runtime",
+      "keywords": [
+        "postponed eval",
+        "deferred eval",
+        "annotation",
+        "forward reference",
+        "stringified",
+        "pep 563",
+        "pep 649",
+        "__annotations__"
+      ]
+    },
+    {
+      "id": "concept_runtime_introspection",
+      "type": "concept",
+      "name": "Runtime Introspection",
+      "description": "Accessing type information at runtime via get_type_hints etc.",
+      "keywords": [
+        "get_type_hints",
+        "runtime",
+        "introspect",
+        "__annotations__"
+      ]
+    },
+    {
+      "id": "concept_type_aliases",
+      "type": "concept",
+      "name": "Type Aliases",
+      "description": "Named shortcuts for complex type expressions",
+      "keywords": [
+        "type alias",
+        "typealias"
+      ]
+    },
+    {
+      "id": "concept_literal_types",
+      "type": "concept",
+      "name": "Literal Types",
+      "description": "Types restricted to specific literal values",
+      "keywords": [
+        "literal"
+      ]
+    },
+    {
+      "id": "concept_typeddict",
+      "type": "concept",
+      "name": "TypedDict",
+      "description": "Typed dictionaries with per-key types",
+      "keywords": [
+        "typeddict",
+        "typed dict",
+        "required",
+        "notrequired",
+        "readonly"
+      ]
+    },
+    {
+      "id": "concept_final_and_constants",
+      "type": "concept",
+      "name": "Final and Constants",
+      "description": "Declaring that a name should not be reassigned or overridden",
+      "keywords": [
+        "final",
+        "@final",
+        "constant"
+      ]
+    },
+    {
+      "id": "concept_variance",
+      "type": "concept",
+      "name": "Variance",
+      "description": "Covariance, contravariance, and invariance in generic types",
+      "keywords": [
+        "covariant",
+        "contravariant",
+        "invariant",
+        "variance"
+      ]
+    },
+    {
+      "id": "concept_alternative_syntax_forms",
+      "type": "concept",
+      "name": "Alternative Syntax Forms",
+      "description": "Debates around functional vs class-based vs inline syntax for type constructs",
+      "keywords": [
+        "functional syntax",
+        "class syntax",
+        "shorthand",
+        "inline"
+      ]
+    },
+    {
+      "id": "concept_static_checker_compatibility",
+      "type": "concept",
+      "name": "Static Checker Compatibility",
+      "description": "Ensuring new features work with mypy, pyright, and other checkers",
+      "keywords": [
+        "mypy",
+        "pyright",
+        "static checker",
+        "type checker",
+        "static analysis"
+      ]
+    },
+    {
+      "id": "concept_decorator-based_typing",
+      "type": "concept",
+      "name": "Decorator-Based Typing",
+      "description": "Using decorators to convey type information (@override, @dataclass_transform)",
+      "keywords": [
+        "@override",
+        "decorator",
+        "dataclass_transform",
+        "@deprecated"
+      ]
+    },
+    {
+      "id": "concept_self_type",
+      "type": "concept",
+      "name": "Self Type",
+      "description": "Referring to the type of the current class in annotations",
+      "keywords": [
+        "self type",
+        "self"
+      ]
+    },
+    {
+      "id": "concept_string_annotations",
+      "type": "concept",
+      "name": "String Annotations",
+      "description": "Using string literals for forward references and annotation forms",
+      "keywords": [
+        "string annotation",
+        "forward ref",
+        "stringified"
+      ]
+    },
+    {
+      "id": "alt_484_0",
+      "type": "alternative",
+      "name": "Use square brackets for generics",
+      "description": "Use List[int] style square bracket syntax by overloading __getitem__ on classes in typing module.",
+      "reason_rejected": "Actually adopted -- this was chosen over angle brackets (List<int>) because Python's parser cannot handle angle brackets without ambiguity with comparison operators.",
+      "reason_category": "ambiguity",
+      "source_pep": 484
+    },
+    {
+      "id": "alt_484_1",
+      "type": "alternative",
+      "name": "Angle brackets for generic types",
+      "description": "Use C++/Java-style angle brackets like List<int> for generic type parameters.",
+      "reason_rejected": "Python's parser treats < and > as comparison operators. Introducing them as brackets would require deep parser changes and create ambiguity.",
+      "reason_category": "complexity",
+      "source_pep": 484
+    },
+    {
+      "id": "alt_484_2",
+      "type": "alternative",
+      "name": "Decorator-based type hints",
+      "description": "Use decorators instead of annotations to specify types, e.g. @types(int, returns=str).",
+      "reason_rejected": "More verbose, less readable, and doesn't integrate with the existing PEP 3107 annotation syntax that was already in the language.",
+      "reason_category": "precedent_conflict",
+      "source_pep": 484
+    },
+    {
+      "id": "alt_484_3",
+      "type": "alternative",
+      "name": "Type hints as comments only",
+      "description": "Put all type information in comments rather than annotations, relying entirely on # type: comments.",
+      "reason_rejected": "Comments are not programmatically accessible at runtime. Annotations provide a structured, inspectable mechanism.",
+      "reason_category": "complexity",
+      "source_pep": 484
+    },
+    {
+      "id": "alt_484_4",
+      "type": "alternative",
+      "name": "Use existing annotation meaning from PEP 3107",
+      "description": "Keep annotations free-form as in PEP 3107 rather than standardizing them for type hints.",
+      "reason_rejected": "The community needed a shared vocabulary for static analysis. Free-form annotations had led to fragmented, incompatible uses.",
+      "reason_category": "ambiguity",
+      "source_pep": 484
+    },
+    {
+      "id": "obj_484_0",
+      "type": "objection",
+      "text": "Type hints will make Python feel like a statically typed language and go against its dynamic nature.",
+      "category": "precedent_conflict",
+      "source_pep": 484,
+      "source_section": "rejected alternatives"
+    },
+    {
+      "id": "obj_484_1",
+      "type": "objection",
+      "text": "Runtime performance concerns -- annotations are evaluated at function definition time, adding overhead.",
+      "category": "performance",
+      "source_pep": 484,
+      "source_section": "rejected alternatives"
+    },
+    {
+      "id": "alt_526_5",
+      "type": "alternative",
+      "name": "Use type comments for all variable annotations",
+      "description": "Continue using '# type: X' comments for variable annotations instead of introducing new syntax.",
+      "reason_rejected": "Comments are invisible to the runtime and tooling. A proper syntax makes annotations part of the language semantics.",
+      "reason_category": "complexity",
+      "source_pep": 526
+    },
+    {
+      "id": "alt_526_6",
+      "type": "alternative",
+      "name": "Introduce a new keyword like 'var'",
+      "description": "Use 'var x: int = 5' syntax with a new keyword for variable declarations.",
+      "reason_rejected": "Adding a new keyword would break existing code that uses 'var' as a variable name. Too disruptive for the ecosystem.",
+      "reason_category": "backward_compat",
+      "source_pep": 526
+    },
+    {
+      "id": "alt_544_7",
+      "type": "alternative",
+      "name": "Runtime structural compatibility checking",
+      "description": "Make isinstance() checks perform full structural comparison for Protocol types at runtime.",
+      "reason_rejected": "Deep structural comparison on every isinstance call would be extremely expensive. The cost is proportional to the complexity of the protocol.",
+      "reason_category": "performance",
+      "source_pep": 544
+    },
+    {
+      "id": "alt_544_8",
+      "type": "alternative",
+      "name": "Use ABCs instead of Protocols",
+      "description": "Continue using Abstract Base Classes for structural subtyping via __subclasshook__.",
+      "reason_rejected": "ABCs require explicit registration or inheritance. Protocols capture duck typing patterns that ABCs cannot express without modifying the checked class.",
+      "reason_category": "complexity",
+      "source_pep": 544
+    },
+    {
+      "id": "alt_544_9",
+      "type": "alternative",
+      "name": "Implicit protocol inference",
+      "description": "Let type checkers automatically infer protocols from usage patterns without explicit Protocol definitions.",
+      "reason_rejected": "Implicit protocols make it impossible to distinguish intentional structural contracts from coincidental method overlap. Explicit is better than implicit.",
+      "reason_category": "ambiguity",
+      "source_pep": 544
+    },
+    {
+      "id": "obj_544_2",
+      "type": "objection",
+      "text": "Protocols add another way to define interfaces alongside ABCs, increasing the conceptual surface of the type system.",
+      "category": "complexity",
+      "source_pep": 544,
+      "source_section": "rejected/postponed ideas"
+    },
+    {
+      "id": "alt_563_10",
+      "type": "alternative",
+      "name": "Lazy evaluation via descriptors or thunks",
+      "description": "Instead of stringifying annotations, evaluate them lazily on first access using a descriptor protocol or thunk mechanism.",
+      "reason_rejected": "Considered too complex for the initial implementation. The stringification approach was simpler and addressed the forward reference problem directly.",
+      "reason_category": "complexity",
+      "source_pep": 563
+    },
+    {
+      "id": "alt_563_11",
+      "type": "alternative",
+      "name": "Keep eager evaluation with improved forward references",
+      "description": "Keep evaluating annotations at definition time but improve the string-based forward reference mechanism.",
+      "reason_rejected": "The fundamental problem is that annotations are evaluated too early, before referenced names are available. String workarounds are fragile and inconsistent.",
+      "reason_category": "complexity",
+      "source_pep": 563
+    },
+    {
+      "id": "obj_563_3",
+      "type": "objection",
+      "text": "Code that accesses __annotations__ directly will get strings instead of types, breaking introspection-based frameworks.",
+      "category": "backward_compat",
+      "source_pep": 563,
+      "source_section": "backwards compatibility"
+    },
+    {
+      "id": "obj_563_4",
+      "type": "objection",
+      "text": "The from __future__ import annotations mechanism creates a per-module opt-in that can cause confusing behavior at module boundaries.",
+      "category": "ambiguity",
+      "source_pep": 563,
+      "source_section": "backwards compatibility"
+    },
+    {
+      "id": "obj_563_5",
+      "type": "objection",
+      "text": "Stringification breaks runtime uses of annotations that expect actual type objects, including dataclasses, attrs, and Pydantic.",
+      "category": "backward_compat",
+      "source_pep": 563,
+      "source_section": "rejected ideas"
+    },
+    {
+      "id": "obj_563_6",
+      "type": "objection",
+      "text": "Libraries relying on get_type_hints() may behave differently because stringified annotations require the correct global/local scope to resolve.",
+      "category": "backward_compat",
+      "source_pep": 563,
+      "source_section": "rejected ideas"
+    },
+    {
+      "id": "alt_585_12",
+      "type": "alternative",
+      "name": "Keep typing module wrappers indefinitely",
+      "description": "Continue using typing.List, typing.Dict etc. rather than allowing list[int], dict[str, int] directly.",
+      "reason_rejected": "The typing module duplicates built-in types unnecessarily. Direct subscription of built-in types is more natural and reduces import burden.",
+      "reason_category": "complexity",
+      "source_pep": 585
+    },
+    {
+      "id": "obj_585_7",
+      "type": "objection",
+      "text": "Deprecating typing.List etc. creates a migration burden for existing codebases with extensive type annotations.",
+      "category": "backward_compat",
+      "source_pep": 585,
+      "source_section": "rejected alternatives"
+    },
+    {
+      "id": "alt_586_13",
+      "type": "alternative",
+      "name": "Enum-based literal types",
+      "description": "Use Python enums to represent literal types instead of introducing Literal[].",
+      "reason_rejected": "Enums require defining a new class for every set of literal values. Literal[] is more lightweight for ad-hoc value constraints.",
+      "reason_category": "complexity",
+      "source_pep": 586
+    },
+    {
+      "id": "alt_586_14",
+      "type": "alternative",
+      "name": "Support mutable literal values",
+      "description": "Allow Literal types to include mutable values like lists or dicts.",
+      "reason_rejected": "Mutable values don't have a stable identity. Literal types must be restricted to immutable, hashable values to maintain type system soundness.",
+      "reason_category": "ambiguity",
+      "source_pep": 586
+    },
+    {
+      "id": "alt_589_15",
+      "type": "alternative",
+      "name": "Inferring TypedDict when unsure",
+      "description": "Inferring a TypedDict type for dictionaries when it is not explicitly clear that a TypedDict is desired by the programmer.",
+      "reason_rejected": "Existing code that type checks without errors may start generating errors once TypedDict support is added, because TypedDict types are more restrictive than ordinary dictionary types and are not subtypes of dictionary types.",
+      "reason_category": "backward_compat",
+      "source_pep": 589
+    },
+    {
+      "id": "alt_589_16",
+      "type": "alternative",
+      "name": "Functional syntax as the primary form",
+      "description": "Use Point2D = TypedDict('Point2D', x=int, y=int) as the only way to define TypedDicts, without the class-based syntax.",
+      "reason_rejected": "The functional form is harder for static type checkers to analyze and doesn't support inheritance or method definitions.",
+      "reason_category": "ambiguity",
+      "source_pep": 589
+    },
+    {
+      "id": "alt_589_17",
+      "type": "alternative",
+      "name": "Use NamedTuple instead of TypedDict",
+      "description": "Use NamedTuple for all cases where structured data with typed fields is needed.",
+      "reason_rejected": "NamedTuples are immutable and create new objects. TypedDict describes plain dicts which are mutable and already widely used in Python codebases, especially for JSON data.",
+      "reason_category": "precedent_conflict",
+      "source_pep": 589
+    },
+    {
+      "id": "alt_589_18",
+      "type": "alternative",
+      "name": "Use regular classes with __init__ annotations",
+      "description": "Define typed dictionary-like objects as regular classes with annotated __init__ parameters.",
+      "reason_rejected": "This doesn't match the actual runtime type (dict). TypedDict specifically describes the structure of plain dict objects.",
+      "reason_category": "complexity",
+      "source_pep": 589
+    },
+    {
+      "id": "obj_589_8",
+      "type": "objection",
+      "text": "TypedDict adds another way to define structured types alongside dataclasses, NamedTuple, and regular classes, increasing cognitive load.",
+      "category": "complexity",
+      "source_pep": 589,
+      "source_section": "rejected alternatives"
+    },
+    {
+      "id": "alt_591_19",
+      "type": "alternative",
+      "name": "Use ALL_CAPS convention instead of Final",
+      "description": "Rely on the PEP 8 convention of UPPER_CASE names for constants rather than adding a type-level qualifier.",
+      "reason_rejected": "Naming conventions are not enforceable by type checkers. Final provides a machine-checkable guarantee that a name won't be reassigned.",
+      "reason_category": "ambiguity",
+      "source_pep": 591
+    },
+    {
+      "id": "alt_613_20",
+      "type": "alternative",
+      "name": "Infer type aliases from assignment context",
+      "description": "Let type checkers automatically determine whether an assignment is a type alias or a regular variable.",
+      "reason_rejected": "Ambiguous in many cases. x = int could be a type alias or a variable holding the int class. Explicit TypeAlias annotation removes the ambiguity.",
+      "reason_category": "ambiguity",
+      "source_pep": 613
+    },
+    {
+      "id": "alt_646_21",
+      "type": "alternative",
+      "name": "Use overloads for each arity",
+      "description": "Define separate overloads for each possible number of type parameters instead of variadic generics.",
+      "reason_rejected": "This approach doesn't scale. A generic type with N parameters would need infinite overloads to cover all cases.",
+      "reason_category": "complexity",
+      "source_pep": 646
+    },
+    {
+      "id": "alt_646_22",
+      "type": "alternative",
+      "name": "Map/zip operations on TypeVarTuples",
+      "description": "Support element-wise type operations on variadic generics, similar to mapped types in TypeScript.",
+      "reason_rejected": "Deferred to a future PEP. The complexity of type-level map/zip operations is significant and the use cases need more exploration.",
+      "reason_category": "out_of_scope",
+      "source_pep": 646
+    },
+    {
+      "id": "obj_646_9",
+      "type": "objection",
+      "text": "Variadic generics add substantial complexity to the type system for a relatively niche use case (primarily tensor shapes in NumPy/ML).",
+      "category": "complexity",
+      "source_pep": 646,
+      "source_section": "rationale and rejected ideas"
+    },
+    {
+      "id": "alt_647_23",
+      "type": "alternative",
+      "name": "Automatic type narrowing from isinstance patterns",
+      "description": "Have type checkers infer type guards automatically from isinstance() and similar patterns without explicit annotations.",
+      "reason_rejected": "Already done for isinstance/issubclass, but custom functions with complex logic can't be auto-inferred. TypeGuard fills the gap for user-defined narrowing.",
+      "reason_category": "complexity",
+      "source_pep": 647
+    },
+    {
+      "id": "alt_647_24",
+      "type": "alternative",
+      "name": "TypeGuard narrows in both branches",
+      "description": "If TypeGuard returns True, narrow to the guarded type; if False, narrow to the complement.",
+      "reason_rejected": "The negative case is not always safe. A function might return False for reasons unrelated to type. This was later revisited in PEP 742 (TypeIs) with stricter semantics.",
+      "reason_category": "ambiguity",
+      "source_pep": 647
+    },
+    {
+      "id": "alt_649_25",
+      "type": "alternative",
+      "name": "Supporting direct reference or modification of local __annotations__ dict in module/class scope",
+      "description": "Allow code in module or class scope to directly reference or modify the local __annotations__ dict under delayed evaluation.",
+      "reason_rejected": "Supporting this would produce surprising semantics that would not satisfy users.",
+      "reason_category": "ambiguity",
+      "source_pep": 649
+    },
+    {
+      "id": "alt_649_26",
+      "type": "alternative",
+      "name": "Make PEP 563 (stringified annotations) the default",
+      "description": "Proceed with PEP 563's plan to make 'from __future__ import annotations' the default behavior, stringifying all annotations.",
+      "reason_rejected": "PEP 563's stringification broke runtime introspection for many libraries (dataclasses, attrs, Pydantic, FastAPI). The backward compatibility cost was too high.",
+      "reason_category": "backward_compat",
+      "source_pep": 649
+    },
+    {
+      "id": "alt_649_27",
+      "type": "alternative",
+      "name": "Keep current eager evaluation",
+      "description": "Don't change annotation evaluation semantics at all, keep evaluating at function definition time.",
+      "reason_rejected": "Forward reference problems remain unsolved. Annotations that reference not-yet-defined names continue to require awkward string quoting.",
+      "reason_category": "complexity",
+      "source_pep": 649
+    },
+    {
+      "id": "obj_649_10",
+      "type": "objection",
+      "text": "Accessing class annotations via cls.__dict__.get('__annotations__', {}) breaks if __annotate__ has not yet been called and cached.",
+      "category": "backward_compat",
+      "source_pep": 649,
+      "source_section": "backwards compatibility with stock semantics"
+    },
+    {
+      "id": "obj_649_11",
+      "type": "objection",
+      "text": "Delaying annotation evaluation changes program semantics if variables referenced in annotations are mutated between definition time and access time.",
+      "category": "backward_compat",
+      "source_pep": 649,
+      "source_section": "backwards compatibility with stock semantics"
+    },
+    {
+      "id": "obj_649_12",
+      "type": "objection",
+      "text": "Setting annotations on module or class attributes inside flow control statements (such as if or try) is no longer supported.",
+      "category": "backward_compat",
+      "source_pep": 649,
+      "source_section": "backwards compatibility with stock semantics"
+    },
+    {
+      "id": "obj_649_13",
+      "type": "objection",
+      "text": "Referencing or modifying the local __annotations__ dict directly in module or class scope is no longer supported and results in undefined behavior.",
+      "category": "backward_compat",
+      "source_pep": 649,
+      "source_section": "backwards compatibility with stock semantics"
+    },
+    {
+      "id": "obj_649_14",
+      "type": "objection",
+      "text": "Annotation values containing ternary if/else expressions may not compute correctly when evaluated with inspect.FORWARDREF or inspect.SOURCE.",
+      "category": "ambiguity",
+      "source_pep": 649,
+      "source_section": "backwards compatibility with stock semantics"
+    },
+    {
+      "id": "obj_649_15",
+      "type": "objection",
+      "text": "Deferred evaluation changes the semantics of __annotations__ from a simple dict of evaluated objects to a more complex lazy-evaluation mechanism.",
+      "category": "complexity",
+      "source_pep": 649,
+      "source_section": "backwards compatibility with pep 563 semantics"
+    },
+    {
+      "id": "obj_649_16",
+      "type": "objection",
+      "text": "Libraries that access __annotations__ directly (rather than via get_type_hints) may need to update their code.",
+      "category": "backward_compat",
+      "source_pep": 649,
+      "source_section": "backwards compatibility with pep 563 semantics"
+    },
+    {
+      "id": "alt_655_28",
+      "type": "alternative",
+      "name": "Use total=True/False with per-key overrides",
+      "description": "Keep the existing total parameter but add per-key override markers inline.",
+      "reason_rejected": "The total parameter already provides a default, but mixing it with per-key overrides in the same class creates confusing interactions.",
+      "reason_category": "ambiguity",
+      "source_pep": 655
+    },
+    {
+      "id": "alt_655_29",
+      "type": "alternative",
+      "name": "Use Optional[] for not-required keys",
+      "description": "Reuse Optional[T] to mean 'this key may be absent' in TypedDict.",
+      "reason_rejected": "Optional means 'T or None', not 'key may be absent'. Conflating the two loses the distinction between a key that's present with value None and a key that's missing.",
+      "reason_category": "ambiguity",
+      "source_pep": 655
+    },
+    {
+      "id": "alt_673_30",
+      "type": "alternative",
+      "name": "Use TypeVar bound to the class",
+      "description": "Define T = TypeVar('T', bound='MyClass') and use it as the return type for methods that return self.",
+      "reason_rejected": "Requires boilerplate TypeVar declaration for every class. Self is a common enough pattern to warrant dedicated syntax.",
+      "reason_category": "complexity",
+      "source_pep": 673
+    },
+    {
+      "id": "alt_673_31",
+      "type": "alternative",
+      "name": "Implicit Self inference",
+      "description": "Let type checkers automatically infer Self return types for methods that return self.",
+      "reason_rejected": "Not all methods returning self should be typed as Self (some might return a fixed base class). Explicit is better than implicit.",
+      "reason_category": "ambiguity",
+      "source_pep": 673
+    },
+    {
+      "id": "alt_675_32",
+      "type": "alternative",
+      "name": "Use Literal type with all possible values",
+      "description": "Use Literal['value1', 'value2', ...] to enumerate all safe string values.",
+      "reason_rejected": "Impractical for SQL queries, file paths, and other domains where the set of valid strings is unbounded. LiteralString captures the safety property (developer-written, not user-provided) without enumeration.",
+      "reason_category": "complexity",
+      "source_pep": 675
+    },
+    {
+      "id": "alt_675_33",
+      "type": "alternative",
+      "name": "Mark tainted strings instead of safe ones",
+      "description": "Use a Tainted[str] type to mark user-provided strings rather than marking safe ones.",
+      "reason_rejected": "Inverting the marking creates a larger annotation burden since most strings in a typical program are safe. Marking the safe case with LiteralString is more ergonomic.",
+      "reason_category": "complexity",
+      "source_pep": 675
+    },
+    {
+      "id": "obj_675_17",
+      "type": "objection",
+      "text": "LiteralString's safety guarantees are limited -- string concatenation of two LiteralStrings is still LiteralString, but f-strings with non-literal parts are not.",
+      "category": "ambiguity",
+      "source_pep": 675,
+      "source_section": "rejected alternatives"
+    },
+    {
+      "id": "alt_681_34",
+      "type": "alternative",
+      "name": "Require libraries to use dataclass directly",
+      "description": "Instead of dataclass_transform, require all dataclass-like libraries (attrs, Pydantic) to use @dataclass internally.",
+      "reason_rejected": "These libraries have different semantics and features that don't map cleanly to @dataclass. Forcing them into that mold would limit their functionality.",
+      "reason_category": "precedent_conflict",
+      "source_pep": 681
+    },
+    {
+      "id": "alt_681_35",
+      "type": "alternative",
+      "name": "Per-library type checker plugins",
+      "description": "Let each library maintain its own type checker plugin (mypy plugin, pyright plugin) for special handling.",
+      "reason_rejected": "Plugins are fragile, hard to maintain across type checker versions, and create an uneven experience. A standard decorator provides a stable interface.",
+      "reason_category": "complexity",
+      "source_pep": 681
+    },
+    {
+      "id": "alt_692_36",
+      "type": "alternative",
+      "name": "Use individual keyword argument annotations",
+      "description": "Type each **kwargs key individually using some inline syntax.",
+      "reason_rejected": "No clean syntax exists for annotating individual keys in **kwargs. TypedDict already provides per-key typing and is well understood.",
+      "reason_category": "complexity",
+      "source_pep": 692
+    },
+    {
+      "id": "obj_692_18",
+      "type": "objection",
+      "text": "Using TypedDict for **kwargs blurs the line between dictionary types and function signatures, which may confuse users.",
+      "category": "ambiguity",
+      "source_pep": 692,
+      "source_section": "rejected ideas"
+    },
+    {
+      "id": "alt_695_37",
+      "type": "alternative",
+      "name": "Keep TypeVar/ParamSpec/TypeVarTuple as-is",
+      "description": "Continue using the existing TypeVar('T'), ParamSpec('P') syntax without new language syntax.",
+      "reason_rejected": "The existing syntax requires redundant name repetition (T = TypeVar('T')), is verbose for simple cases, and doesn't support scoping type variables to their usage site.",
+      "reason_category": "complexity",
+      "source_pep": 695
+    },
+    {
+      "id": "alt_695_38",
+      "type": "alternative",
+      "name": "Use angle brackets for type parameters",
+      "description": "Use class Foo<T>: syntax similar to Java/C#/TypeScript.",
+      "reason_rejected": "Angle brackets conflict with comparison operators in Python's grammar. The [T] syntax in class Foo[T]: is unambiguous and consistent with subscription syntax.",
+      "reason_category": "ambiguity",
+      "source_pep": 695
+    },
+    {
+      "id": "obj_695_19",
+      "type": "objection",
+      "text": "New syntax for something already expressible adds learning cost and creates two ways to do the same thing during a long transition period.",
+      "category": "complexity",
+      "source_pep": 695,
+      "source_section": "rejected ideas"
+    },
+    {
+      "id": "alt_698_39",
+      "type": "alternative",
+      "name": "Use comments or naming conventions",
+      "description": "Mark overrides with comments like # override or naming conventions.",
+      "reason_rejected": "Comments aren't checkable by type checkers. A decorator provides a machine-verifiable contract that the method actually overrides something in a parent class.",
+      "reason_category": "ambiguity",
+      "source_pep": 698
+    },
+    {
+      "id": "alt_698_40",
+      "type": "alternative",
+      "name": "Implicit override detection",
+      "description": "Let type checkers automatically detect overrides by comparing method names with parent classes.",
+      "reason_rejected": "Accidental overrides (naming collisions) would go undetected. Explicit @override makes the intent clear and catches cases where the parent method is removed or renamed.",
+      "reason_category": "ambiguity",
+      "source_pep": 698
+    },
+    {
+      "id": "alt_702_41",
+      "type": "alternative",
+      "name": "Use runtime warnings.warn only",
+      "description": "Continue using only runtime DeprecationWarning via warnings.warn() without type-level support.",
+      "reason_rejected": "Runtime warnings are only triggered when deprecated code actually executes. Type-level deprecation catches usage at analysis time, before the code runs.",
+      "reason_category": "out_of_scope",
+      "source_pep": 702
+    },
+    {
+      "id": "obj_702_20",
+      "type": "objection",
+      "text": "Adding deprecation to the type system mixes runtime lifecycle concerns with static type information.",
+      "category": "precedent_conflict",
+      "source_pep": 702,
+      "source_section": "rejected ideas"
+    },
+    {
+      "id": "alt_705_42",
+      "type": "alternative",
+      "name": "Use Final for read-only TypedDict items",
+      "description": "Reuse Final[] to mark TypedDict items as read-only.",
+      "reason_rejected": "Final means 'cannot be reassigned' in variable context, but TypedDict items aren't variables. ReadOnly is a clearer semantic for dict items that shouldn't be modified.",
+      "reason_category": "ambiguity",
+      "source_pep": 705
+    },
+    {
+      "id": "alt_705_43",
+      "type": "alternative",
+      "name": "Immutable TypedDict variant",
+      "description": "Create a FrozenTypedDict that makes all items read-only at once.",
+      "reason_rejected": "Per-item control is more flexible. Some items may need to be mutable while others are read-only in the same dict type.",
+      "reason_category": "complexity",
+      "source_pep": 705
+    },
+    {
+      "id": "alt_742_44",
+      "type": "alternative",
+      "name": "Fix TypeGuard to narrow in both branches",
+      "description": "Modify the existing TypeGuard (PEP 647) to also narrow the type in the else branch instead of introducing a new form.",
+      "reason_rejected": "Changing TypeGuard's semantics would break existing code that relies on the current one-sided narrowing behavior. A new form (TypeIs) with stricter requirements is safer.",
+      "reason_category": "backward_compat",
+      "source_pep": 742
+    },
+    {
+      "id": "alt_742_45",
+      "type": "alternative",
+      "name": "Add a flag to TypeGuard",
+      "description": "Add a parameter like TypeGuard[X, narrow_negative=True] to opt into both-branch narrowing.",
+      "reason_rejected": "Parameterized behavior on a type form is unusual in Python's type system and harder for type checkers to implement consistently.",
+      "reason_category": "complexity",
+      "source_pep": 742
+    },
+    {
+      "id": "obj_742_21",
+      "type": "objection",
+      "text": "TypeIs and TypeGuard are easy to confuse. Having two similar but subtly different type narrowing mechanisms increases cognitive load.",
+      "category": "complexity",
+      "source_pep": 742,
+      "source_section": "rejected ideas"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pep_483",
+      "target": "person_guido_van_rossum",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_483",
+      "target": "person_ivan_levkivskyi",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_483",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_483",
+      "target": "concept_structural_subtyping",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_483",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_483",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_483",
+      "target": "concept_type_narrowing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_483",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_483",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_483",
+      "target": "concept_type_aliases",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_483",
+      "target": "concept_literal_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_483",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_483",
+      "target": "concept_variance",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_483",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_483",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_483",
+      "target": "concept_string_annotations",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_483",
+      "target": "pep_484",
+      "type": "references",
+      "context": "abstract"
+    },
+    {
+      "source": "pep_483",
+      "target": "pep_484",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_484",
+      "target": "person_guido_van_rossum",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_484",
+      "target": "person_jukka_lehtosalo",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_484",
+      "target": "person_\u0142ukasz_langa",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_type_narrowing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_type_aliases",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_literal_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_variance",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_alternative_syntax_forms",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_decorator-based_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "concept_string_annotations",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_484",
+      "target": "pep_483",
+      "type": "references",
+      "context": "abstract"
+    },
+    {
+      "source": "pep_484",
+      "target": "pep_483",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_484",
+      "target": "pep_526",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_484",
+      "target": "pep_561",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_484",
+      "target": "pep_563",
+      "type": "references",
+      "context": "rejected_ideas"
+    },
+    {
+      "source": "pep_484",
+      "target": "alt_484_0",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_484",
+      "target": "alt_484_1",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_484",
+      "target": "alt_484_2",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_484",
+      "target": "alt_484_3",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_484",
+      "target": "alt_484_4",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_484",
+      "target": "obj_484_0",
+      "type": "raises"
+    },
+    {
+      "source": "pep_484",
+      "target": "obj_484_1",
+      "type": "raises"
+    },
+    {
+      "source": "pep_526",
+      "target": "person_ryan_gonzalez",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_526",
+      "target": "person_philip_house",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_526",
+      "target": "person_ivan_levkivskyi",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_526",
+      "target": "person_lisa_roach",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_526",
+      "target": "person_guido_van_rossum",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_526",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_526",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_526",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_526",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_526",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_526",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_526",
+      "target": "concept_variance",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_526",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_526",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_526",
+      "target": "concept_string_annotations",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_526",
+      "target": "pep_526",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_526",
+      "target": "pep_484",
+      "type": "references",
+      "context": "abstract"
+    },
+    {
+      "source": "pep_526",
+      "target": "pep_484",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_526",
+      "target": "pep_484",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_526",
+      "target": "pep_484",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_526",
+      "target": "pep_484",
+      "type": "references",
+      "context": "rejected_ideas"
+    },
+    {
+      "source": "pep_526",
+      "target": "alt_526_5",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_526",
+      "target": "alt_526_6",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_544",
+      "target": "person_ivan_levkivskyi",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_544",
+      "target": "person_jukka_lehtosalo",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_544",
+      "target": "person_\u0142ukasz_langa",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_structural_subtyping",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_type_narrowing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_type_aliases",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_variance",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_alternative_syntax_forms",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_decorator-based_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "concept_string_annotations",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_544",
+      "target": "pep_484",
+      "type": "references",
+      "context": "abstract"
+    },
+    {
+      "source": "pep_544",
+      "target": "pep_484",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_544",
+      "target": "pep_484",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_544",
+      "target": "pep_484",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_544",
+      "target": "pep_484",
+      "type": "references",
+      "context": "rejected_ideas"
+    },
+    {
+      "source": "pep_544",
+      "target": "pep_483",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_544",
+      "target": "pep_483",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_544",
+      "target": "pep_544",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_544",
+      "target": "pep_544",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_544",
+      "target": "pep_544",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_544",
+      "target": "pep_526",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_544",
+      "target": "pep_526",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_544",
+      "target": "pep_526",
+      "type": "references",
+      "context": "rejected_ideas"
+    },
+    {
+      "source": "pep_544",
+      "target": "alt_544_7",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_544",
+      "target": "alt_544_8",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_544",
+      "target": "alt_544_9",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_544",
+      "target": "obj_544_2",
+      "type": "raises"
+    },
+    {
+      "source": "pep_560",
+      "target": "person_ivan_levkivskyi",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_560",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_560",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_560",
+      "target": "concept_type_narrowing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_560",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_560",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_560",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_560",
+      "target": "concept_decorator-based_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_560",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_560",
+      "target": "pep_484",
+      "type": "references",
+      "context": "abstract"
+    },
+    {
+      "source": "pep_560",
+      "target": "pep_484",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_560",
+      "target": "pep_484",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_560",
+      "target": "pep_526",
+      "type": "references",
+      "context": "abstract"
+    },
+    {
+      "source": "pep_561",
+      "target": "person_emma_harper_smith",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_561",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_561",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_561",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_561",
+      "target": "concept_alternative_syntax_forms",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_561",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_561",
+      "target": "pep_484",
+      "type": "references",
+      "context": "abstract"
+    },
+    {
+      "source": "pep_561",
+      "target": "pep_484",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_561",
+      "target": "pep_484",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_561",
+      "target": "pep_526",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_561",
+      "target": "pep_561",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_563",
+      "target": "person_\u0142ukasz_langa",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_563",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_563",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_563",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_563",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_563",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_563",
+      "target": "concept_literal_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_563",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_563",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_563",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_563",
+      "target": "concept_decorator-based_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_563",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_563",
+      "target": "concept_string_annotations",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_563",
+      "target": "pep_649",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_563",
+      "target": "pep_649",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_563",
+      "target": "pep_649",
+      "type": "references",
+      "context": "backwards_compat"
+    },
+    {
+      "source": "pep_563",
+      "target": "pep_484",
+      "type": "references",
+      "context": "abstract"
+    },
+    {
+      "source": "pep_563",
+      "target": "pep_484",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_563",
+      "target": "pep_484",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_563",
+      "target": "pep_526",
+      "type": "references",
+      "context": "abstract"
+    },
+    {
+      "source": "pep_563",
+      "target": "pep_526",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_563",
+      "target": "pep_526",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_563",
+      "target": "pep_544",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_563",
+      "target": "pep_560",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_563",
+      "target": "pep_563",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_563",
+      "target": "alt_563_10",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_563",
+      "target": "alt_563_11",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_563",
+      "target": "obj_563_3",
+      "type": "raises"
+    },
+    {
+      "source": "pep_563",
+      "target": "obj_563_4",
+      "type": "raises"
+    },
+    {
+      "source": "pep_563",
+      "target": "obj_563_5",
+      "type": "raises"
+    },
+    {
+      "source": "pep_563",
+      "target": "obj_563_6",
+      "type": "raises"
+    },
+    {
+      "source": "pep_585",
+      "target": "person_\u0142ukasz_langa",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_585",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_585",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_585",
+      "target": "concept_type_narrowing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_585",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_585",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_585",
+      "target": "concept_type_aliases",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_585",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_585",
+      "target": "concept_string_annotations",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_585",
+      "target": "pep_585",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_585",
+      "target": "pep_563",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_585",
+      "target": "alt_585_12",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_585",
+      "target": "obj_585_7",
+      "type": "raises"
+    },
+    {
+      "source": "pep_586",
+      "target": "person_michael_lee",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_586",
+      "target": "person_ivan_levkivskyi",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_586",
+      "target": "person_jukka_lehtosalo",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_586",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_586",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_586",
+      "target": "concept_type_narrowing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_586",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_586",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_586",
+      "target": "concept_type_aliases",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_586",
+      "target": "concept_literal_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_586",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_586",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_586",
+      "target": "concept_alternative_syntax_forms",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_586",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_586",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_586",
+      "target": "concept_string_annotations",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_586",
+      "target": "pep_484",
+      "type": "references",
+      "context": "abstract"
+    },
+    {
+      "source": "pep_586",
+      "target": "pep_484",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_586",
+      "target": "pep_484",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_586",
+      "target": "pep_484",
+      "type": "references",
+      "context": "rejected_ideas"
+    },
+    {
+      "source": "pep_586",
+      "target": "pep_591",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_586",
+      "target": "alt_586_13",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_586",
+      "target": "alt_586_14",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_589",
+      "target": "person_jukka_lehtosalo",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_589",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_589",
+      "target": "concept_structural_subtyping",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_589",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_589",
+      "target": "concept_type_narrowing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_589",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_589",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_589",
+      "target": "concept_type_aliases",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_589",
+      "target": "concept_literal_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_589",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_589",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_589",
+      "target": "concept_variance",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_589",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_589",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_589",
+      "target": "concept_string_annotations",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_589",
+      "target": "pep_484",
+      "type": "references",
+      "context": "abstract"
+    },
+    {
+      "source": "pep_589",
+      "target": "pep_484",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_589",
+      "target": "pep_484",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_589",
+      "target": "pep_484",
+      "type": "references",
+      "context": "rejected_ideas"
+    },
+    {
+      "source": "pep_589",
+      "target": "pep_526",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_589",
+      "target": "pep_483",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_589",
+      "target": "pep_591",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_589",
+      "target": "pep_586",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_589",
+      "target": "alt_589_15",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_589",
+      "target": "alt_589_16",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_589",
+      "target": "alt_589_17",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_589",
+      "target": "alt_589_18",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_589",
+      "target": "obj_589_8",
+      "type": "raises"
+    },
+    {
+      "source": "pep_591",
+      "target": "person_michael_j._sullivan",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_591",
+      "target": "person_ivan_levkivskyi",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_591",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_591",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_591",
+      "target": "concept_type_narrowing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_591",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_591",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_591",
+      "target": "concept_literal_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_591",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_591",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_591",
+      "target": "concept_decorator-based_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_591",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_591",
+      "target": "pep_586",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_591",
+      "target": "alt_591_19",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_593",
+      "target": "person_till_varoquaux",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_593",
+      "target": "person_konstantin_kashin",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_593",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_593",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_593",
+      "target": "concept_type_narrowing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_593",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_593",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_593",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_593",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_593",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_593",
+      "target": "pep_484",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_604",
+      "target": "person_philippe_prados",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_604",
+      "target": "person_maggie_moss",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_604",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_604",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_604",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_604",
+      "target": "concept_type_narrowing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_604",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_604",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_604",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_604",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_604",
+      "target": "pep_484",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_604",
+      "target": "pep_484",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_604",
+      "target": "pep_526",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_604",
+      "target": "pep_585",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_604",
+      "target": "pep_563",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_612",
+      "target": "person_mark_mendoza",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_612",
+      "target": "concept_structural_subtyping",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_612",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_612",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_612",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_612",
+      "target": "concept_variance",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_612",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_612",
+      "target": "concept_decorator-based_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_612",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_612",
+      "target": "pep_484",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_612",
+      "target": "pep_544",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_613",
+      "target": "person_shannon_zhu",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_613",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_613",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_613",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_613",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_613",
+      "target": "concept_type_aliases",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_613",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_613",
+      "target": "concept_string_annotations",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_613",
+      "target": "pep_484",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_613",
+      "target": "alt_613_20",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_646",
+      "target": "person_mark_mendoza",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_646",
+      "target": "person_matthew_rahtz",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_646",
+      "target": "person_pradeep_kumar_srinivasan",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_646",
+      "target": "person_vincent_siles",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_646",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_646",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_646",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_646",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_646",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_646",
+      "target": "concept_literal_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_646",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_646",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_646",
+      "target": "concept_variance",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_646",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_646",
+      "target": "concept_decorator-based_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_646",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_646",
+      "target": "pep_484",
+      "type": "references",
+      "context": "abstract"
+    },
+    {
+      "source": "pep_646",
+      "target": "pep_484",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_646",
+      "target": "pep_646",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_646",
+      "target": "alt_646_21",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_646",
+      "target": "alt_646_22",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_646",
+      "target": "obj_646_9",
+      "type": "raises"
+    },
+    {
+      "source": "pep_647",
+      "target": "person_eric_traut",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_647",
+      "target": "concept_structural_subtyping",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_647",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_647",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_647",
+      "target": "concept_type_narrowing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_647",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_647",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_647",
+      "target": "concept_literal_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_647",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_647",
+      "target": "concept_variance",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_647",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_647",
+      "target": "concept_decorator-based_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_647",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_647",
+      "target": "concept_string_annotations",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_647",
+      "target": "alt_647_23",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_647",
+      "target": "alt_647_24",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_649",
+      "target": "person_larry_hastings",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_649",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_649",
+      "target": "concept_structural_subtyping",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_649",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_649",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_649",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_649",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_649",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_649",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_649",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_649",
+      "target": "concept_decorator-based_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_649",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_649",
+      "target": "concept_string_annotations",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_649",
+      "target": "pep_563",
+      "type": "supersedes"
+    },
+    {
+      "source": "pep_649",
+      "target": "pep_563",
+      "type": "supersedes"
+    },
+    {
+      "source": "pep_649",
+      "target": "pep_563",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_649",
+      "target": "pep_563",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_649",
+      "target": "pep_563",
+      "type": "references",
+      "context": "backwards_compat"
+    },
+    {
+      "source": "pep_649",
+      "target": "pep_484",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_649",
+      "target": "pep_526",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_649",
+      "target": "alt_649_25",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_649",
+      "target": "alt_649_26",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_649",
+      "target": "alt_649_27",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_649",
+      "target": "obj_649_10",
+      "type": "raises"
+    },
+    {
+      "source": "pep_649",
+      "target": "obj_649_11",
+      "type": "raises"
+    },
+    {
+      "source": "pep_649",
+      "target": "obj_649_12",
+      "type": "raises"
+    },
+    {
+      "source": "pep_649",
+      "target": "obj_649_13",
+      "type": "raises"
+    },
+    {
+      "source": "pep_649",
+      "target": "obj_649_14",
+      "type": "raises"
+    },
+    {
+      "source": "pep_649",
+      "target": "obj_649_15",
+      "type": "raises"
+    },
+    {
+      "source": "pep_649",
+      "target": "obj_649_16",
+      "type": "raises"
+    },
+    {
+      "source": "pep_655",
+      "target": "person_david_foster",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_655",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_655",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_655",
+      "target": "concept_type_narrowing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_655",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_655",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_655",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_655",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_655",
+      "target": "concept_variance",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_655",
+      "target": "concept_alternative_syntax_forms",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_655",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_655",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_655",
+      "target": "pep_589",
+      "type": "references",
+      "context": "abstract"
+    },
+    {
+      "source": "pep_655",
+      "target": "pep_589",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_655",
+      "target": "pep_604",
+      "type": "references",
+      "context": "rejected_ideas"
+    },
+    {
+      "source": "pep_655",
+      "target": "alt_655_28",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_655",
+      "target": "alt_655_29",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_673",
+      "target": "person_pradeep_kumar_srinivasan",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_673",
+      "target": "person_james_hilton-balfe",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_673",
+      "target": "concept_structural_subtyping",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_673",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_673",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_673",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_673",
+      "target": "concept_type_aliases",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_673",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_673",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_673",
+      "target": "pep_484",
+      "type": "references",
+      "context": "abstract"
+    },
+    {
+      "source": "pep_673",
+      "target": "pep_544",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_673",
+      "target": "alt_673_30",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_673",
+      "target": "alt_673_31",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_675",
+      "target": "person_pradeep_kumar_srinivasan",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_675",
+      "target": "person_graham_bleaney",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_675",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_675",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_675",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_675",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_675",
+      "target": "concept_literal_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_675",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_675",
+      "target": "concept_alternative_syntax_forms",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_675",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_675",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_675",
+      "target": "pep_586",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_675",
+      "target": "pep_586",
+      "type": "references",
+      "context": "backwards_compat"
+    },
+    {
+      "source": "pep_675",
+      "target": "pep_675",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_675",
+      "target": "alt_675_32",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_675",
+      "target": "alt_675_33",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_675",
+      "target": "obj_675_17",
+      "type": "raises"
+    },
+    {
+      "source": "pep_681",
+      "target": "person_erik_de_bonte",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_681",
+      "target": "person_eric_traut",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_681",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_681",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_681",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_681",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_681",
+      "target": "concept_literal_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_681",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_681",
+      "target": "concept_alternative_syntax_forms",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_681",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_681",
+      "target": "concept_decorator-based_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_681",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_681",
+      "target": "pep_526",
+      "type": "references",
+      "context": "rejected_ideas"
+    },
+    {
+      "source": "pep_681",
+      "target": "alt_681_34",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_681",
+      "target": "alt_681_35",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_692",
+      "target": "person_franek_magiera",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_692",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_692",
+      "target": "concept_structural_subtyping",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_692",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_692",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_692",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_692",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_692",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_692",
+      "target": "concept_variance",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_692",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_692",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_692",
+      "target": "pep_589",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_692",
+      "target": "pep_646",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_692",
+      "target": "pep_655",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_692",
+      "target": "pep_692",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_692",
+      "target": "alt_692_36",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_692",
+      "target": "obj_692_18",
+      "type": "raises"
+    },
+    {
+      "source": "pep_695",
+      "target": "person_eric_traut",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_695",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_695",
+      "target": "concept_structural_subtyping",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_695",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_695",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_695",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_695",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_695",
+      "target": "concept_type_aliases",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_695",
+      "target": "concept_literal_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_695",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_695",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_695",
+      "target": "concept_variance",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_695",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_695",
+      "target": "concept_decorator-based_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_695",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_695",
+      "target": "concept_string_annotations",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_695",
+      "target": "pep_484",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_695",
+      "target": "pep_484",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_695",
+      "target": "pep_612",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_695",
+      "target": "pep_612",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_695",
+      "target": "pep_646",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_695",
+      "target": "pep_646",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_695",
+      "target": "pep_483",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_695",
+      "target": "pep_613",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_695",
+      "target": "pep_563",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_695",
+      "target": "pep_649",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_695",
+      "target": "alt_695_37",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_695",
+      "target": "alt_695_38",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_695",
+      "target": "obj_695_19",
+      "type": "raises"
+    },
+    {
+      "source": "pep_696",
+      "target": "person_james_hilton-balfe",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_696",
+      "target": "concept_structural_subtyping",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_696",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_696",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_696",
+      "target": "concept_type_aliases",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_696",
+      "target": "concept_literal_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_696",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_696",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_696",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_696",
+      "target": "pep_695",
+      "type": "references",
+      "context": "other"
+    },
+    {
+      "source": "pep_698",
+      "target": "person_steven_troxler",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_698",
+      "target": "person_joshua_xu",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_698",
+      "target": "person_shannon_zhu",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_698",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_698",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_698",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_698",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_698",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_698",
+      "target": "concept_decorator-based_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_698",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_698",
+      "target": "pep_591",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_698",
+      "target": "alt_698_39",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_698",
+      "target": "alt_698_40",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_702",
+      "target": "person_jelle_zijlstra",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_702",
+      "target": "concept_structural_subtyping",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_702",
+      "target": "concept_type_narrowing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_702",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_702",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_702",
+      "target": "concept_literal_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_702",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_702",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_702",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_702",
+      "target": "concept_decorator-based_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_702",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_702",
+      "target": "concept_string_annotations",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_702",
+      "target": "pep_698",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_702",
+      "target": "alt_702_41",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_702",
+      "target": "obj_702_20",
+      "type": "raises"
+    },
+    {
+      "source": "pep_705",
+      "target": "person_alice_purcell",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_705",
+      "target": "concept_gradual_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_705",
+      "target": "concept_structural_subtyping",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_705",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_705",
+      "target": "concept_generic_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_705",
+      "target": "concept_annotation_evaluation",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_705",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_705",
+      "target": "concept_literal_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_705",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_705",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_705",
+      "target": "concept_variance",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_705",
+      "target": "concept_alternative_syntax_forms",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_705",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_705",
+      "target": "concept_decorator-based_typing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_705",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_705",
+      "target": "pep_589",
+      "type": "references",
+      "context": "abstract"
+    },
+    {
+      "source": "pep_705",
+      "target": "pep_589",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_705",
+      "target": "pep_589",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_705",
+      "target": "pep_544",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_705",
+      "target": "pep_655",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_705",
+      "target": "pep_692",
+      "type": "references",
+      "context": "specification"
+    },
+    {
+      "source": "pep_705",
+      "target": "pep_591",
+      "type": "references",
+      "context": "rejected_ideas"
+    },
+    {
+      "source": "pep_705",
+      "target": "alt_705_42",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_705",
+      "target": "alt_705_43",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_742",
+      "target": "person_jelle_zijlstra",
+      "type": "authored_by"
+    },
+    {
+      "source": "pep_742",
+      "target": "concept_structural_subtyping",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_742",
+      "target": "concept_union_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_742",
+      "target": "concept_type_narrowing",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_742",
+      "target": "concept_runtime_introspection",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_742",
+      "target": "concept_literal_types",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_742",
+      "target": "concept_typeddict",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_742",
+      "target": "concept_final_and_constants",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_742",
+      "target": "concept_variance",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_742",
+      "target": "concept_static_checker_compatibility",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_742",
+      "target": "concept_self_type",
+      "type": "relates_to_concept"
+    },
+    {
+      "source": "pep_742",
+      "target": "pep_647",
+      "type": "references",
+      "context": "rationale"
+    },
+    {
+      "source": "pep_742",
+      "target": "pep_647",
+      "type": "references",
+      "context": "rejected_ideas"
+    },
+    {
+      "source": "pep_742",
+      "target": "alt_742_44",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_742",
+      "target": "alt_742_45",
+      "type": "considers_and_rejects"
+    },
+    {
+      "source": "pep_742",
+      "target": "obj_742_21",
+      "type": "raises"
+    },
+    {
+      "source": "alt_484_1",
+      "target": "pep_695",
+      "type": "resembles",
+      "justification": "PEP 484 rejected angle brackets for generics; PEP 695 revisited type parameter syntax and chose a different approach entirely."
+    },
+    {
+      "source": "alt_563_10",
+      "target": "pep_649",
+      "type": "resembles",
+      "justification": "PEP 563 rejected lazy/deferred evaluation as too complex; PEP 649 later shipped this exact approach with a different mechanism."
+    },
+    {
+      "source": "alt_647_24",
+      "target": "pep_742",
+      "type": "resembles",
+      "justification": "PEP 647 rejected bidirectional narrowing for TypeGuard; PEP 742 introduced TypeIs which provides this with stricter guarantees."
+    }
+  ]
+}

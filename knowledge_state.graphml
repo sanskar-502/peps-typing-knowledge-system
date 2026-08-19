@@ -1,0 +1,2812 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d19" for="edge" attr.name="justification" attr.type="string" />
+  <key id="d18" for="edge" attr.name="context" attr.type="string" />
+  <key id="d17" for="edge" attr.name="type" attr.type="string" />
+  <key id="d16" for="node" attr.name="source_section" attr.type="string" />
+  <key id="d15" for="node" attr.name="category" attr.type="string" />
+  <key id="d14" for="node" attr.name="text" attr.type="string" />
+  <key id="d13" for="node" attr.name="source_pep" attr.type="long" />
+  <key id="d12" for="node" attr.name="reason_category" attr.type="string" />
+  <key id="d11" for="node" attr.name="reason_rejected" attr.type="string" />
+  <key id="d10" for="node" attr.name="keywords" attr.type="string" />
+  <key id="d9" for="node" attr.name="description" attr.type="string" />
+  <key id="d8" for="node" attr.name="name" attr.type="string" />
+  <key id="d7" for="node" attr.name="python_version" attr.type="string" />
+  <key id="d6" for="node" attr.name="created_date" attr.type="string" />
+  <key id="d5" for="node" attr.name="authors" attr.type="string" />
+  <key id="d4" for="node" attr.name="pep_type" attr.type="string" />
+  <key id="d3" for="node" attr.name="status" attr.type="string" />
+  <key id="d2" for="node" attr.name="title" attr.type="string" />
+  <key id="d1" for="node" attr.name="pep_number" attr.type="long" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="pep_483">
+      <data key="d0">proposal</data>
+      <data key="d1">483</data>
+      <data key="d2">The Theory of Type Hints</data>
+      <data key="d3">final</data>
+      <data key="d4">informational</data>
+      <data key="d5">Guido van Rossum, Ivan Levkivskyi</data>
+      <data key="d6">19-Dec-2014</data>
+      <data key="d7" />
+    </node>
+    <node id="pep_484">
+      <data key="d0">proposal</data>
+      <data key="d1">484</data>
+      <data key="d2">Type Hints</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Guido van Rossum, Jukka Lehtosalo, Łukasz Langa</data>
+      <data key="d6">29-Sep-2014</data>
+      <data key="d7">3.5</data>
+    </node>
+    <node id="pep_526">
+      <data key="d0">proposal</data>
+      <data key="d1">526</data>
+      <data key="d2">Syntax for Variable Annotations</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Ryan Gonzalez, Philip House, Ivan Levkivskyi, Lisa Roach, Guido van Rossum</data>
+      <data key="d6">09-Aug-2016</data>
+      <data key="d7">3.6</data>
+    </node>
+    <node id="pep_544">
+      <data key="d0">proposal</data>
+      <data key="d1">544</data>
+      <data key="d2">Protocols: Structural subtyping (static duck typing)</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Ivan Levkivskyi, Jukka Lehtosalo, Łukasz Langa</data>
+      <data key="d6">05-Mar-2017</data>
+      <data key="d7">3.8</data>
+    </node>
+    <node id="pep_560">
+      <data key="d0">proposal</data>
+      <data key="d1">560</data>
+      <data key="d2">Core support for typing module and generic types</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Ivan Levkivskyi</data>
+      <data key="d6">03-Sep-2017</data>
+      <data key="d7">3.7</data>
+    </node>
+    <node id="pep_561">
+      <data key="d0">proposal</data>
+      <data key="d1">561</data>
+      <data key="d2">Distributing and Packaging Type Information</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Emma Harper Smith</data>
+      <data key="d6">09-Sep-2017</data>
+      <data key="d7">3.7</data>
+    </node>
+    <node id="pep_563">
+      <data key="d0">proposal</data>
+      <data key="d1">563</data>
+      <data key="d2">Postponed Evaluation of Annotations</data>
+      <data key="d3">superseded</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Łukasz Langa</data>
+      <data key="d6">08-Sep-2017</data>
+      <data key="d7">3.7</data>
+    </node>
+    <node id="pep_585">
+      <data key="d0">proposal</data>
+      <data key="d1">585</data>
+      <data key="d2">Type Hinting Generics In Standard Collections</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Łukasz Langa</data>
+      <data key="d6">03-Mar-2019</data>
+      <data key="d7">3.9</data>
+    </node>
+    <node id="pep_586">
+      <data key="d0">proposal</data>
+      <data key="d1">586</data>
+      <data key="d2">Literal Types</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Michael Lee, Ivan Levkivskyi, Jukka Lehtosalo</data>
+      <data key="d6">14-Mar-2019</data>
+      <data key="d7">3.8</data>
+    </node>
+    <node id="pep_589">
+      <data key="d0">proposal</data>
+      <data key="d1">589</data>
+      <data key="d2">TypedDict: Type Hints for Dictionaries with a Fixed Set of Keys</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Jukka Lehtosalo</data>
+      <data key="d6">20-Mar-2019</data>
+      <data key="d7">3.8</data>
+    </node>
+    <node id="pep_591">
+      <data key="d0">proposal</data>
+      <data key="d1">591</data>
+      <data key="d2">Adding a final qualifier to typing</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Michael J. Sullivan, Ivan Levkivskyi</data>
+      <data key="d6">15-Mar-2019</data>
+      <data key="d7">3.8</data>
+    </node>
+    <node id="pep_593">
+      <data key="d0">proposal</data>
+      <data key="d1">593</data>
+      <data key="d2">Flexible function and variable annotations</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Till Varoquaux, Konstantin Kashin</data>
+      <data key="d6">26-Apr-2019</data>
+      <data key="d7">3.9</data>
+    </node>
+    <node id="pep_604">
+      <data key="d0">proposal</data>
+      <data key="d1">604</data>
+      <data key="d2">Allow writing union types as ``X | Y``</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Philippe PRADOS, Maggie Moss</data>
+      <data key="d6">28-Aug-2019</data>
+      <data key="d7">3.10</data>
+    </node>
+    <node id="pep_612">
+      <data key="d0">proposal</data>
+      <data key="d1">612</data>
+      <data key="d2">Parameter Specification Variables</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Mark Mendoza</data>
+      <data key="d6">18-Dec-2019</data>
+      <data key="d7">3.10</data>
+    </node>
+    <node id="pep_613">
+      <data key="d0">proposal</data>
+      <data key="d1">613</data>
+      <data key="d2">Explicit Type Aliases</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Shannon Zhu</data>
+      <data key="d6">21-Jan-2020</data>
+      <data key="d7">3.10</data>
+    </node>
+    <node id="pep_646">
+      <data key="d0">proposal</data>
+      <data key="d1">646</data>
+      <data key="d2">Variadic Generics</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Mark Mendoza, Matthew Rahtz, Pradeep Kumar Srinivasan, Vincent Siles</data>
+      <data key="d6">16-Sep-2020</data>
+      <data key="d7">3.11</data>
+    </node>
+    <node id="pep_647">
+      <data key="d0">proposal</data>
+      <data key="d1">647</data>
+      <data key="d2">User-Defined Type Guards</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Eric Traut</data>
+      <data key="d6">07-Oct-2020</data>
+      <data key="d7">3.10</data>
+    </node>
+    <node id="pep_649">
+      <data key="d0">proposal</data>
+      <data key="d1">649</data>
+      <data key="d2">Deferred Evaluation Of Annotations Using Descriptors</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Larry Hastings</data>
+      <data key="d6">11-Jan-2021</data>
+      <data key="d7">3.14</data>
+    </node>
+    <node id="pep_655">
+      <data key="d0">proposal</data>
+      <data key="d1">655</data>
+      <data key="d2">Marking individual TypedDict items as required or potentially-missing</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">David Foster</data>
+      <data key="d6">30-Jan-2021</data>
+      <data key="d7">3.11</data>
+    </node>
+    <node id="pep_673">
+      <data key="d0">proposal</data>
+      <data key="d1">673</data>
+      <data key="d2">Self Type</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Pradeep Kumar Srinivasan, James Hilton-Balfe</data>
+      <data key="d6">10-Nov-2021</data>
+      <data key="d7">3.11</data>
+    </node>
+    <node id="pep_675">
+      <data key="d0">proposal</data>
+      <data key="d1">675</data>
+      <data key="d2">Arbitrary Literal String Type</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Pradeep Kumar Srinivasan, Graham Bleaney</data>
+      <data key="d6">30-Nov-2021</data>
+      <data key="d7">3.11</data>
+    </node>
+    <node id="pep_681">
+      <data key="d0">proposal</data>
+      <data key="d1">681</data>
+      <data key="d2">Data Class Transforms</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Erik De Bonte, Eric Traut</data>
+      <data key="d6">02-Dec-2021</data>
+      <data key="d7">3.11</data>
+    </node>
+    <node id="pep_692">
+      <data key="d0">proposal</data>
+      <data key="d1">692</data>
+      <data key="d2">Using TypedDict for more precise \*\*kwargs typing</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Franek Magiera</data>
+      <data key="d6">29-May-2022</data>
+      <data key="d7">3.12</data>
+    </node>
+    <node id="pep_695">
+      <data key="d0">proposal</data>
+      <data key="d1">695</data>
+      <data key="d2">Type Parameter Syntax</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Eric Traut</data>
+      <data key="d6">15-Jun-2022</data>
+      <data key="d7">3.12</data>
+    </node>
+    <node id="pep_696">
+      <data key="d0">proposal</data>
+      <data key="d1">696</data>
+      <data key="d2">Type Defaults for Type Parameters</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">James Hilton-Balfe</data>
+      <data key="d6">14-Jul-2022</data>
+      <data key="d7">3.13</data>
+    </node>
+    <node id="pep_698">
+      <data key="d0">proposal</data>
+      <data key="d1">698</data>
+      <data key="d2">Override Decorator for Static Typing</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Steven Troxler, Joshua Xu, Shannon Zhu</data>
+      <data key="d6">05-Sep-2022</data>
+      <data key="d7">3.12</data>
+    </node>
+    <node id="pep_702">
+      <data key="d0">proposal</data>
+      <data key="d1">702</data>
+      <data key="d2">Marking deprecations using the type system</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Jelle Zijlstra</data>
+      <data key="d6">30-Dec-2022</data>
+      <data key="d7">3.13</data>
+    </node>
+    <node id="pep_705">
+      <data key="d0">proposal</data>
+      <data key="d1">705</data>
+      <data key="d2">TypedDict: Read-only items</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Alice Purcell</data>
+      <data key="d6">07-Nov-2022</data>
+      <data key="d7">3.13</data>
+    </node>
+    <node id="pep_742">
+      <data key="d0">proposal</data>
+      <data key="d1">742</data>
+      <data key="d2">Narrowing types with TypeIs</data>
+      <data key="d3">final</data>
+      <data key="d4">standards_track</data>
+      <data key="d5">Jelle Zijlstra</data>
+      <data key="d6">07-Feb-2024</data>
+      <data key="d7">3.13</data>
+    </node>
+    <node id="person_alice_purcell">
+      <data key="d0">person</data>
+      <data key="d8">Alice Purcell</data>
+    </node>
+    <node id="person_david_foster">
+      <data key="d0">person</data>
+      <data key="d8">David Foster</data>
+    </node>
+    <node id="person_emma_harper_smith">
+      <data key="d0">person</data>
+      <data key="d8">Emma Harper Smith</data>
+    </node>
+    <node id="person_eric_traut">
+      <data key="d0">person</data>
+      <data key="d8">Eric Traut</data>
+    </node>
+    <node id="person_erik_de_bonte">
+      <data key="d0">person</data>
+      <data key="d8">Erik De Bonte</data>
+    </node>
+    <node id="person_franek_magiera">
+      <data key="d0">person</data>
+      <data key="d8">Franek Magiera</data>
+    </node>
+    <node id="person_graham_bleaney">
+      <data key="d0">person</data>
+      <data key="d8">Graham Bleaney</data>
+    </node>
+    <node id="person_guido_van_rossum">
+      <data key="d0">person</data>
+      <data key="d8">Guido van Rossum</data>
+    </node>
+    <node id="person_ivan_levkivskyi">
+      <data key="d0">person</data>
+      <data key="d8">Ivan Levkivskyi</data>
+    </node>
+    <node id="person_james_hilton-balfe">
+      <data key="d0">person</data>
+      <data key="d8">James Hilton-Balfe</data>
+    </node>
+    <node id="person_jelle_zijlstra">
+      <data key="d0">person</data>
+      <data key="d8">Jelle Zijlstra</data>
+    </node>
+    <node id="person_joshua_xu">
+      <data key="d0">person</data>
+      <data key="d8">Joshua Xu</data>
+    </node>
+    <node id="person_jukka_lehtosalo">
+      <data key="d0">person</data>
+      <data key="d8">Jukka Lehtosalo</data>
+    </node>
+    <node id="person_konstantin_kashin">
+      <data key="d0">person</data>
+      <data key="d8">Konstantin Kashin</data>
+    </node>
+    <node id="person_larry_hastings">
+      <data key="d0">person</data>
+      <data key="d8">Larry Hastings</data>
+    </node>
+    <node id="person_lisa_roach">
+      <data key="d0">person</data>
+      <data key="d8">Lisa Roach</data>
+    </node>
+    <node id="person_maggie_moss">
+      <data key="d0">person</data>
+      <data key="d8">Maggie Moss</data>
+    </node>
+    <node id="person_mark_mendoza">
+      <data key="d0">person</data>
+      <data key="d8">Mark Mendoza</data>
+    </node>
+    <node id="person_matthew_rahtz">
+      <data key="d0">person</data>
+      <data key="d8">Matthew Rahtz</data>
+    </node>
+    <node id="person_michael_j._sullivan">
+      <data key="d0">person</data>
+      <data key="d8">Michael J. Sullivan</data>
+    </node>
+    <node id="person_michael_lee">
+      <data key="d0">person</data>
+      <data key="d8">Michael Lee</data>
+    </node>
+    <node id="person_philip_house">
+      <data key="d0">person</data>
+      <data key="d8">Philip House</data>
+    </node>
+    <node id="person_philippe_prados">
+      <data key="d0">person</data>
+      <data key="d8">Philippe PRADOS</data>
+    </node>
+    <node id="person_pradeep_kumar_srinivasan">
+      <data key="d0">person</data>
+      <data key="d8">Pradeep Kumar Srinivasan</data>
+    </node>
+    <node id="person_ryan_gonzalez">
+      <data key="d0">person</data>
+      <data key="d8">Ryan Gonzalez</data>
+    </node>
+    <node id="person_shannon_zhu">
+      <data key="d0">person</data>
+      <data key="d8">Shannon Zhu</data>
+    </node>
+    <node id="person_steven_troxler">
+      <data key="d0">person</data>
+      <data key="d8">Steven Troxler</data>
+    </node>
+    <node id="person_till_varoquaux">
+      <data key="d0">person</data>
+      <data key="d8">Till Varoquaux</data>
+    </node>
+    <node id="person_vincent_siles">
+      <data key="d0">person</data>
+      <data key="d8">Vincent Siles</data>
+    </node>
+    <node id="person_łukasz_langa">
+      <data key="d0">person</data>
+      <data key="d8">Łukasz Langa</data>
+    </node>
+    <node id="concept_gradual_typing">
+      <data key="d0">concept</data>
+      <data key="d8">Gradual Typing</data>
+      <data key="d9">The idea that type hints are optional and don't affect runtime behavior</data>
+      <data key="d10">gradual typing, optional type, type hint</data>
+    </node>
+    <node id="concept_structural_subtyping">
+      <data key="d0">concept</data>
+      <data key="d8">Structural Subtyping</data>
+      <data key="d9">Type compatibility based on structure rather than inheritance (Protocols)</data>
+      <data key="d10">structural subtyp, protocol, duck typing</data>
+    </node>
+    <node id="concept_union_types">
+      <data key="d0">concept</data>
+      <data key="d8">Union Types</data>
+      <data key="d9">Representing a value that could be one of several types</data>
+      <data key="d10">union, x | y, optional</data>
+    </node>
+    <node id="concept_generic_types">
+      <data key="d0">concept</data>
+      <data key="d8">Generic Types</data>
+      <data key="d9">Parameterized types that work across different contained types</data>
+      <data key="d10">generic, typevar, paramspec, type parameter, typevartuple</data>
+    </node>
+    <node id="concept_type_narrowing">
+      <data key="d0">concept</data>
+      <data key="d8">Type Narrowing</data>
+      <data key="d9">Refining a type within a conditional branch (type guards, TypeIs)</data>
+      <data key="d10">type guard, narrowing, typeis, isinstance</data>
+    </node>
+    <node id="concept_annotation_evaluation">
+      <data key="d0">concept</data>
+      <data key="d8">Annotation Evaluation</data>
+      <data key="d9">When and how type annotations are evaluated at runtime</data>
+      <data key="d10">postponed eval, deferred eval, annotation, forward reference, stringified, pep 563, pep 649, __annotations__</data>
+    </node>
+    <node id="concept_runtime_introspection">
+      <data key="d0">concept</data>
+      <data key="d8">Runtime Introspection</data>
+      <data key="d9">Accessing type information at runtime via get_type_hints etc.</data>
+      <data key="d10">get_type_hints, runtime, introspect, __annotations__</data>
+    </node>
+    <node id="concept_type_aliases">
+      <data key="d0">concept</data>
+      <data key="d8">Type Aliases</data>
+      <data key="d9">Named shortcuts for complex type expressions</data>
+      <data key="d10">type alias, typealias</data>
+    </node>
+    <node id="concept_literal_types">
+      <data key="d0">concept</data>
+      <data key="d8">Literal Types</data>
+      <data key="d9">Types restricted to specific literal values</data>
+      <data key="d10">literal</data>
+    </node>
+    <node id="concept_typeddict">
+      <data key="d0">concept</data>
+      <data key="d8">TypedDict</data>
+      <data key="d9">Typed dictionaries with per-key types</data>
+      <data key="d10">typeddict, typed dict, required, notrequired, readonly</data>
+    </node>
+    <node id="concept_final_and_constants">
+      <data key="d0">concept</data>
+      <data key="d8">Final and Constants</data>
+      <data key="d9">Declaring that a name should not be reassigned or overridden</data>
+      <data key="d10">final, @final, constant</data>
+    </node>
+    <node id="concept_variance">
+      <data key="d0">concept</data>
+      <data key="d8">Variance</data>
+      <data key="d9">Covariance, contravariance, and invariance in generic types</data>
+      <data key="d10">covariant, contravariant, invariant, variance</data>
+    </node>
+    <node id="concept_alternative_syntax_forms">
+      <data key="d0">concept</data>
+      <data key="d8">Alternative Syntax Forms</data>
+      <data key="d9">Debates around functional vs class-based vs inline syntax for type constructs</data>
+      <data key="d10">functional syntax, class syntax, shorthand, inline</data>
+    </node>
+    <node id="concept_static_checker_compatibility">
+      <data key="d0">concept</data>
+      <data key="d8">Static Checker Compatibility</data>
+      <data key="d9">Ensuring new features work with mypy, pyright, and other checkers</data>
+      <data key="d10">mypy, pyright, static checker, type checker, static analysis</data>
+    </node>
+    <node id="concept_decorator-based_typing">
+      <data key="d0">concept</data>
+      <data key="d8">Decorator-Based Typing</data>
+      <data key="d9">Using decorators to convey type information (@override, @dataclass_transform)</data>
+      <data key="d10">@override, decorator, dataclass_transform, @deprecated</data>
+    </node>
+    <node id="concept_self_type">
+      <data key="d0">concept</data>
+      <data key="d8">Self Type</data>
+      <data key="d9">Referring to the type of the current class in annotations</data>
+      <data key="d10">self type, self</data>
+    </node>
+    <node id="concept_string_annotations">
+      <data key="d0">concept</data>
+      <data key="d8">String Annotations</data>
+      <data key="d9">Using string literals for forward references and annotation forms</data>
+      <data key="d10">string annotation, forward ref, stringified</data>
+    </node>
+    <node id="alt_484_0">
+      <data key="d0">alternative</data>
+      <data key="d8">Use square brackets for generics</data>
+      <data key="d9">Use List[int] style square bracket syntax by overloading __getitem__ on classes in typing module.</data>
+      <data key="d11">Actually adopted -- this was chosen over angle brackets (List&lt;int&gt;) because Python's parser cannot handle angle brackets without ambiguity with comparison operators.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">484</data>
+    </node>
+    <node id="alt_484_1">
+      <data key="d0">alternative</data>
+      <data key="d8">Angle brackets for generic types</data>
+      <data key="d9">Use C++/Java-style angle brackets like List&lt;int&gt; for generic type parameters.</data>
+      <data key="d11">Python's parser treats &lt; and &gt; as comparison operators. Introducing them as brackets would require deep parser changes and create ambiguity.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">484</data>
+    </node>
+    <node id="alt_484_2">
+      <data key="d0">alternative</data>
+      <data key="d8">Decorator-based type hints</data>
+      <data key="d9">Use decorators instead of annotations to specify types, e.g. @types(int, returns=str).</data>
+      <data key="d11">More verbose, less readable, and doesn't integrate with the existing PEP 3107 annotation syntax that was already in the language.</data>
+      <data key="d12">precedent_conflict</data>
+      <data key="d13">484</data>
+    </node>
+    <node id="alt_484_3">
+      <data key="d0">alternative</data>
+      <data key="d8">Type hints as comments only</data>
+      <data key="d9">Put all type information in comments rather than annotations, relying entirely on # type: comments.</data>
+      <data key="d11">Comments are not programmatically accessible at runtime. Annotations provide a structured, inspectable mechanism.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">484</data>
+    </node>
+    <node id="alt_484_4">
+      <data key="d0">alternative</data>
+      <data key="d8">Use existing annotation meaning from PEP 3107</data>
+      <data key="d9">Keep annotations free-form as in PEP 3107 rather than standardizing them for type hints.</data>
+      <data key="d11">The community needed a shared vocabulary for static analysis. Free-form annotations had led to fragmented, incompatible uses.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">484</data>
+    </node>
+    <node id="obj_484_0">
+      <data key="d0">objection</data>
+      <data key="d14">Type hints will make Python feel like a statically typed language and go against its dynamic nature.</data>
+      <data key="d15">precedent_conflict</data>
+      <data key="d13">484</data>
+      <data key="d16">rejected alternatives</data>
+    </node>
+    <node id="obj_484_1">
+      <data key="d0">objection</data>
+      <data key="d14">Runtime performance concerns -- annotations are evaluated at function definition time, adding overhead.</data>
+      <data key="d15">performance</data>
+      <data key="d13">484</data>
+      <data key="d16">rejected alternatives</data>
+    </node>
+    <node id="alt_526_5">
+      <data key="d0">alternative</data>
+      <data key="d8">Use type comments for all variable annotations</data>
+      <data key="d9">Continue using '# type: X' comments for variable annotations instead of introducing new syntax.</data>
+      <data key="d11">Comments are invisible to the runtime and tooling. A proper syntax makes annotations part of the language semantics.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">526</data>
+    </node>
+    <node id="alt_526_6">
+      <data key="d0">alternative</data>
+      <data key="d8">Introduce a new keyword like 'var'</data>
+      <data key="d9">Use 'var x: int = 5' syntax with a new keyword for variable declarations.</data>
+      <data key="d11">Adding a new keyword would break existing code that uses 'var' as a variable name. Too disruptive for the ecosystem.</data>
+      <data key="d12">backward_compat</data>
+      <data key="d13">526</data>
+    </node>
+    <node id="alt_544_7">
+      <data key="d0">alternative</data>
+      <data key="d8">Runtime structural compatibility checking</data>
+      <data key="d9">Make isinstance() checks perform full structural comparison for Protocol types at runtime.</data>
+      <data key="d11">Deep structural comparison on every isinstance call would be extremely expensive. The cost is proportional to the complexity of the protocol.</data>
+      <data key="d12">performance</data>
+      <data key="d13">544</data>
+    </node>
+    <node id="alt_544_8">
+      <data key="d0">alternative</data>
+      <data key="d8">Use ABCs instead of Protocols</data>
+      <data key="d9">Continue using Abstract Base Classes for structural subtyping via __subclasshook__.</data>
+      <data key="d11">ABCs require explicit registration or inheritance. Protocols capture duck typing patterns that ABCs cannot express without modifying the checked class.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">544</data>
+    </node>
+    <node id="alt_544_9">
+      <data key="d0">alternative</data>
+      <data key="d8">Implicit protocol inference</data>
+      <data key="d9">Let type checkers automatically infer protocols from usage patterns without explicit Protocol definitions.</data>
+      <data key="d11">Implicit protocols make it impossible to distinguish intentional structural contracts from coincidental method overlap. Explicit is better than implicit.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">544</data>
+    </node>
+    <node id="obj_544_2">
+      <data key="d0">objection</data>
+      <data key="d14">Protocols add another way to define interfaces alongside ABCs, increasing the conceptual surface of the type system.</data>
+      <data key="d15">complexity</data>
+      <data key="d13">544</data>
+      <data key="d16">rejected/postponed ideas</data>
+    </node>
+    <node id="alt_563_10">
+      <data key="d0">alternative</data>
+      <data key="d8">Lazy evaluation via descriptors or thunks</data>
+      <data key="d9">Instead of stringifying annotations, evaluate them lazily on first access using a descriptor protocol or thunk mechanism.</data>
+      <data key="d11">Considered too complex for the initial implementation. The stringification approach was simpler and addressed the forward reference problem directly.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">563</data>
+    </node>
+    <node id="alt_563_11">
+      <data key="d0">alternative</data>
+      <data key="d8">Keep eager evaluation with improved forward references</data>
+      <data key="d9">Keep evaluating annotations at definition time but improve the string-based forward reference mechanism.</data>
+      <data key="d11">The fundamental problem is that annotations are evaluated too early, before referenced names are available. String workarounds are fragile and inconsistent.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">563</data>
+    </node>
+    <node id="obj_563_3">
+      <data key="d0">objection</data>
+      <data key="d14">Code that accesses __annotations__ directly will get strings instead of types, breaking introspection-based frameworks.</data>
+      <data key="d15">backward_compat</data>
+      <data key="d13">563</data>
+      <data key="d16">backwards compatibility</data>
+    </node>
+    <node id="obj_563_4">
+      <data key="d0">objection</data>
+      <data key="d14">The from __future__ import annotations mechanism creates a per-module opt-in that can cause confusing behavior at module boundaries.</data>
+      <data key="d15">ambiguity</data>
+      <data key="d13">563</data>
+      <data key="d16">backwards compatibility</data>
+    </node>
+    <node id="obj_563_5">
+      <data key="d0">objection</data>
+      <data key="d14">Stringification breaks runtime uses of annotations that expect actual type objects, including dataclasses, attrs, and Pydantic.</data>
+      <data key="d15">backward_compat</data>
+      <data key="d13">563</data>
+      <data key="d16">rejected ideas</data>
+    </node>
+    <node id="obj_563_6">
+      <data key="d0">objection</data>
+      <data key="d14">Libraries relying on get_type_hints() may behave differently because stringified annotations require the correct global/local scope to resolve.</data>
+      <data key="d15">backward_compat</data>
+      <data key="d13">563</data>
+      <data key="d16">rejected ideas</data>
+    </node>
+    <node id="alt_585_12">
+      <data key="d0">alternative</data>
+      <data key="d8">Keep typing module wrappers indefinitely</data>
+      <data key="d9">Continue using typing.List, typing.Dict etc. rather than allowing list[int], dict[str, int] directly.</data>
+      <data key="d11">The typing module duplicates built-in types unnecessarily. Direct subscription of built-in types is more natural and reduces import burden.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">585</data>
+    </node>
+    <node id="obj_585_7">
+      <data key="d0">objection</data>
+      <data key="d14">Deprecating typing.List etc. creates a migration burden for existing codebases with extensive type annotations.</data>
+      <data key="d15">backward_compat</data>
+      <data key="d13">585</data>
+      <data key="d16">rejected alternatives</data>
+    </node>
+    <node id="alt_586_13">
+      <data key="d0">alternative</data>
+      <data key="d8">Enum-based literal types</data>
+      <data key="d9">Use Python enums to represent literal types instead of introducing Literal[].</data>
+      <data key="d11">Enums require defining a new class for every set of literal values. Literal[] is more lightweight for ad-hoc value constraints.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">586</data>
+    </node>
+    <node id="alt_586_14">
+      <data key="d0">alternative</data>
+      <data key="d8">Support mutable literal values</data>
+      <data key="d9">Allow Literal types to include mutable values like lists or dicts.</data>
+      <data key="d11">Mutable values don't have a stable identity. Literal types must be restricted to immutable, hashable values to maintain type system soundness.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">586</data>
+    </node>
+    <node id="alt_589_15">
+      <data key="d0">alternative</data>
+      <data key="d8">Inferring TypedDict when unsure</data>
+      <data key="d9">Inferring a TypedDict type for dictionaries when it is not explicitly clear that a TypedDict is desired by the programmer.</data>
+      <data key="d11">Existing code that type checks without errors may start generating errors once TypedDict support is added, because TypedDict types are more restrictive than ordinary dictionary types and are not subtypes of dictionary types.</data>
+      <data key="d12">backward_compat</data>
+      <data key="d13">589</data>
+    </node>
+    <node id="alt_589_16">
+      <data key="d0">alternative</data>
+      <data key="d8">Functional syntax as the primary form</data>
+      <data key="d9">Use Point2D = TypedDict('Point2D', x=int, y=int) as the only way to define TypedDicts, without the class-based syntax.</data>
+      <data key="d11">The functional form is harder for static type checkers to analyze and doesn't support inheritance or method definitions.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">589</data>
+    </node>
+    <node id="alt_589_17">
+      <data key="d0">alternative</data>
+      <data key="d8">Use NamedTuple instead of TypedDict</data>
+      <data key="d9">Use NamedTuple for all cases where structured data with typed fields is needed.</data>
+      <data key="d11">NamedTuples are immutable and create new objects. TypedDict describes plain dicts which are mutable and already widely used in Python codebases, especially for JSON data.</data>
+      <data key="d12">precedent_conflict</data>
+      <data key="d13">589</data>
+    </node>
+    <node id="alt_589_18">
+      <data key="d0">alternative</data>
+      <data key="d8">Use regular classes with __init__ annotations</data>
+      <data key="d9">Define typed dictionary-like objects as regular classes with annotated __init__ parameters.</data>
+      <data key="d11">This doesn't match the actual runtime type (dict). TypedDict specifically describes the structure of plain dict objects.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">589</data>
+    </node>
+    <node id="obj_589_8">
+      <data key="d0">objection</data>
+      <data key="d14">TypedDict adds another way to define structured types alongside dataclasses, NamedTuple, and regular classes, increasing cognitive load.</data>
+      <data key="d15">complexity</data>
+      <data key="d13">589</data>
+      <data key="d16">rejected alternatives</data>
+    </node>
+    <node id="alt_591_19">
+      <data key="d0">alternative</data>
+      <data key="d8">Use ALL_CAPS convention instead of Final</data>
+      <data key="d9">Rely on the PEP 8 convention of UPPER_CASE names for constants rather than adding a type-level qualifier.</data>
+      <data key="d11">Naming conventions are not enforceable by type checkers. Final provides a machine-checkable guarantee that a name won't be reassigned.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">591</data>
+    </node>
+    <node id="alt_613_20">
+      <data key="d0">alternative</data>
+      <data key="d8">Infer type aliases from assignment context</data>
+      <data key="d9">Let type checkers automatically determine whether an assignment is a type alias or a regular variable.</data>
+      <data key="d11">Ambiguous in many cases. x = int could be a type alias or a variable holding the int class. Explicit TypeAlias annotation removes the ambiguity.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">613</data>
+    </node>
+    <node id="alt_646_21">
+      <data key="d0">alternative</data>
+      <data key="d8">Use overloads for each arity</data>
+      <data key="d9">Define separate overloads for each possible number of type parameters instead of variadic generics.</data>
+      <data key="d11">This approach doesn't scale. A generic type with N parameters would need infinite overloads to cover all cases.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">646</data>
+    </node>
+    <node id="alt_646_22">
+      <data key="d0">alternative</data>
+      <data key="d8">Map/zip operations on TypeVarTuples</data>
+      <data key="d9">Support element-wise type operations on variadic generics, similar to mapped types in TypeScript.</data>
+      <data key="d11">Deferred to a future PEP. The complexity of type-level map/zip operations is significant and the use cases need more exploration.</data>
+      <data key="d12">out_of_scope</data>
+      <data key="d13">646</data>
+    </node>
+    <node id="obj_646_9">
+      <data key="d0">objection</data>
+      <data key="d14">Variadic generics add substantial complexity to the type system for a relatively niche use case (primarily tensor shapes in NumPy/ML).</data>
+      <data key="d15">complexity</data>
+      <data key="d13">646</data>
+      <data key="d16">rationale and rejected ideas</data>
+    </node>
+    <node id="alt_647_23">
+      <data key="d0">alternative</data>
+      <data key="d8">Automatic type narrowing from isinstance patterns</data>
+      <data key="d9">Have type checkers infer type guards automatically from isinstance() and similar patterns without explicit annotations.</data>
+      <data key="d11">Already done for isinstance/issubclass, but custom functions with complex logic can't be auto-inferred. TypeGuard fills the gap for user-defined narrowing.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">647</data>
+    </node>
+    <node id="alt_647_24">
+      <data key="d0">alternative</data>
+      <data key="d8">TypeGuard narrows in both branches</data>
+      <data key="d9">If TypeGuard returns True, narrow to the guarded type; if False, narrow to the complement.</data>
+      <data key="d11">The negative case is not always safe. A function might return False for reasons unrelated to type. This was later revisited in PEP 742 (TypeIs) with stricter semantics.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">647</data>
+    </node>
+    <node id="alt_649_25">
+      <data key="d0">alternative</data>
+      <data key="d8">Supporting direct reference or modification of local __annotations__ dict in module/class scope</data>
+      <data key="d9">Allow code in module or class scope to directly reference or modify the local __annotations__ dict under delayed evaluation.</data>
+      <data key="d11">Supporting this would produce surprising semantics that would not satisfy users.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">649</data>
+    </node>
+    <node id="alt_649_26">
+      <data key="d0">alternative</data>
+      <data key="d8">Make PEP 563 (stringified annotations) the default</data>
+      <data key="d9">Proceed with PEP 563's plan to make 'from __future__ import annotations' the default behavior, stringifying all annotations.</data>
+      <data key="d11">PEP 563's stringification broke runtime introspection for many libraries (dataclasses, attrs, Pydantic, FastAPI). The backward compatibility cost was too high.</data>
+      <data key="d12">backward_compat</data>
+      <data key="d13">649</data>
+    </node>
+    <node id="alt_649_27">
+      <data key="d0">alternative</data>
+      <data key="d8">Keep current eager evaluation</data>
+      <data key="d9">Don't change annotation evaluation semantics at all, keep evaluating at function definition time.</data>
+      <data key="d11">Forward reference problems remain unsolved. Annotations that reference not-yet-defined names continue to require awkward string quoting.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">649</data>
+    </node>
+    <node id="obj_649_10">
+      <data key="d0">objection</data>
+      <data key="d14">Accessing class annotations via cls.__dict__.get('__annotations__', {}) breaks if __annotate__ has not yet been called and cached.</data>
+      <data key="d15">backward_compat</data>
+      <data key="d13">649</data>
+      <data key="d16">backwards compatibility with stock semantics</data>
+    </node>
+    <node id="obj_649_11">
+      <data key="d0">objection</data>
+      <data key="d14">Delaying annotation evaluation changes program semantics if variables referenced in annotations are mutated between definition time and access time.</data>
+      <data key="d15">backward_compat</data>
+      <data key="d13">649</data>
+      <data key="d16">backwards compatibility with stock semantics</data>
+    </node>
+    <node id="obj_649_12">
+      <data key="d0">objection</data>
+      <data key="d14">Setting annotations on module or class attributes inside flow control statements (such as if or try) is no longer supported.</data>
+      <data key="d15">backward_compat</data>
+      <data key="d13">649</data>
+      <data key="d16">backwards compatibility with stock semantics</data>
+    </node>
+    <node id="obj_649_13">
+      <data key="d0">objection</data>
+      <data key="d14">Referencing or modifying the local __annotations__ dict directly in module or class scope is no longer supported and results in undefined behavior.</data>
+      <data key="d15">backward_compat</data>
+      <data key="d13">649</data>
+      <data key="d16">backwards compatibility with stock semantics</data>
+    </node>
+    <node id="obj_649_14">
+      <data key="d0">objection</data>
+      <data key="d14">Annotation values containing ternary if/else expressions may not compute correctly when evaluated with inspect.FORWARDREF or inspect.SOURCE.</data>
+      <data key="d15">ambiguity</data>
+      <data key="d13">649</data>
+      <data key="d16">backwards compatibility with stock semantics</data>
+    </node>
+    <node id="obj_649_15">
+      <data key="d0">objection</data>
+      <data key="d14">Deferred evaluation changes the semantics of __annotations__ from a simple dict of evaluated objects to a more complex lazy-evaluation mechanism.</data>
+      <data key="d15">complexity</data>
+      <data key="d13">649</data>
+      <data key="d16">backwards compatibility with pep 563 semantics</data>
+    </node>
+    <node id="obj_649_16">
+      <data key="d0">objection</data>
+      <data key="d14">Libraries that access __annotations__ directly (rather than via get_type_hints) may need to update their code.</data>
+      <data key="d15">backward_compat</data>
+      <data key="d13">649</data>
+      <data key="d16">backwards compatibility with pep 563 semantics</data>
+    </node>
+    <node id="alt_655_28">
+      <data key="d0">alternative</data>
+      <data key="d8">Use total=True/False with per-key overrides</data>
+      <data key="d9">Keep the existing total parameter but add per-key override markers inline.</data>
+      <data key="d11">The total parameter already provides a default, but mixing it with per-key overrides in the same class creates confusing interactions.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">655</data>
+    </node>
+    <node id="alt_655_29">
+      <data key="d0">alternative</data>
+      <data key="d8">Use Optional[] for not-required keys</data>
+      <data key="d9">Reuse Optional[T] to mean 'this key may be absent' in TypedDict.</data>
+      <data key="d11">Optional means 'T or None', not 'key may be absent'. Conflating the two loses the distinction between a key that's present with value None and a key that's missing.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">655</data>
+    </node>
+    <node id="alt_673_30">
+      <data key="d0">alternative</data>
+      <data key="d8">Use TypeVar bound to the class</data>
+      <data key="d9">Define T = TypeVar('T', bound='MyClass') and use it as the return type for methods that return self.</data>
+      <data key="d11">Requires boilerplate TypeVar declaration for every class. Self is a common enough pattern to warrant dedicated syntax.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">673</data>
+    </node>
+    <node id="alt_673_31">
+      <data key="d0">alternative</data>
+      <data key="d8">Implicit Self inference</data>
+      <data key="d9">Let type checkers automatically infer Self return types for methods that return self.</data>
+      <data key="d11">Not all methods returning self should be typed as Self (some might return a fixed base class). Explicit is better than implicit.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">673</data>
+    </node>
+    <node id="alt_675_32">
+      <data key="d0">alternative</data>
+      <data key="d8">Use Literal type with all possible values</data>
+      <data key="d9">Use Literal['value1', 'value2', ...] to enumerate all safe string values.</data>
+      <data key="d11">Impractical for SQL queries, file paths, and other domains where the set of valid strings is unbounded. LiteralString captures the safety property (developer-written, not user-provided) without enumeration.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">675</data>
+    </node>
+    <node id="alt_675_33">
+      <data key="d0">alternative</data>
+      <data key="d8">Mark tainted strings instead of safe ones</data>
+      <data key="d9">Use a Tainted[str] type to mark user-provided strings rather than marking safe ones.</data>
+      <data key="d11">Inverting the marking creates a larger annotation burden since most strings in a typical program are safe. Marking the safe case with LiteralString is more ergonomic.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">675</data>
+    </node>
+    <node id="obj_675_17">
+      <data key="d0">objection</data>
+      <data key="d14">LiteralString's safety guarantees are limited -- string concatenation of two LiteralStrings is still LiteralString, but f-strings with non-literal parts are not.</data>
+      <data key="d15">ambiguity</data>
+      <data key="d13">675</data>
+      <data key="d16">rejected alternatives</data>
+    </node>
+    <node id="alt_681_34">
+      <data key="d0">alternative</data>
+      <data key="d8">Require libraries to use dataclass directly</data>
+      <data key="d9">Instead of dataclass_transform, require all dataclass-like libraries (attrs, Pydantic) to use @dataclass internally.</data>
+      <data key="d11">These libraries have different semantics and features that don't map cleanly to @dataclass. Forcing them into that mold would limit their functionality.</data>
+      <data key="d12">precedent_conflict</data>
+      <data key="d13">681</data>
+    </node>
+    <node id="alt_681_35">
+      <data key="d0">alternative</data>
+      <data key="d8">Per-library type checker plugins</data>
+      <data key="d9">Let each library maintain its own type checker plugin (mypy plugin, pyright plugin) for special handling.</data>
+      <data key="d11">Plugins are fragile, hard to maintain across type checker versions, and create an uneven experience. A standard decorator provides a stable interface.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">681</data>
+    </node>
+    <node id="alt_692_36">
+      <data key="d0">alternative</data>
+      <data key="d8">Use individual keyword argument annotations</data>
+      <data key="d9">Type each **kwargs key individually using some inline syntax.</data>
+      <data key="d11">No clean syntax exists for annotating individual keys in **kwargs. TypedDict already provides per-key typing and is well understood.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">692</data>
+    </node>
+    <node id="obj_692_18">
+      <data key="d0">objection</data>
+      <data key="d14">Using TypedDict for **kwargs blurs the line between dictionary types and function signatures, which may confuse users.</data>
+      <data key="d15">ambiguity</data>
+      <data key="d13">692</data>
+      <data key="d16">rejected ideas</data>
+    </node>
+    <node id="alt_695_37">
+      <data key="d0">alternative</data>
+      <data key="d8">Keep TypeVar/ParamSpec/TypeVarTuple as-is</data>
+      <data key="d9">Continue using the existing TypeVar('T'), ParamSpec('P') syntax without new language syntax.</data>
+      <data key="d11">The existing syntax requires redundant name repetition (T = TypeVar('T')), is verbose for simple cases, and doesn't support scoping type variables to their usage site.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">695</data>
+    </node>
+    <node id="alt_695_38">
+      <data key="d0">alternative</data>
+      <data key="d8">Use angle brackets for type parameters</data>
+      <data key="d9">Use class Foo&lt;T&gt;: syntax similar to Java/C#/TypeScript.</data>
+      <data key="d11">Angle brackets conflict with comparison operators in Python's grammar. The [T] syntax in class Foo[T]: is unambiguous and consistent with subscription syntax.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">695</data>
+    </node>
+    <node id="obj_695_19">
+      <data key="d0">objection</data>
+      <data key="d14">New syntax for something already expressible adds learning cost and creates two ways to do the same thing during a long transition period.</data>
+      <data key="d15">complexity</data>
+      <data key="d13">695</data>
+      <data key="d16">rejected ideas</data>
+    </node>
+    <node id="alt_698_39">
+      <data key="d0">alternative</data>
+      <data key="d8">Use comments or naming conventions</data>
+      <data key="d9">Mark overrides with comments like # override or naming conventions.</data>
+      <data key="d11">Comments aren't checkable by type checkers. A decorator provides a machine-verifiable contract that the method actually overrides something in a parent class.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">698</data>
+    </node>
+    <node id="alt_698_40">
+      <data key="d0">alternative</data>
+      <data key="d8">Implicit override detection</data>
+      <data key="d9">Let type checkers automatically detect overrides by comparing method names with parent classes.</data>
+      <data key="d11">Accidental overrides (naming collisions) would go undetected. Explicit @override makes the intent clear and catches cases where the parent method is removed or renamed.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">698</data>
+    </node>
+    <node id="alt_702_41">
+      <data key="d0">alternative</data>
+      <data key="d8">Use runtime warnings.warn only</data>
+      <data key="d9">Continue using only runtime DeprecationWarning via warnings.warn() without type-level support.</data>
+      <data key="d11">Runtime warnings are only triggered when deprecated code actually executes. Type-level deprecation catches usage at analysis time, before the code runs.</data>
+      <data key="d12">out_of_scope</data>
+      <data key="d13">702</data>
+    </node>
+    <node id="obj_702_20">
+      <data key="d0">objection</data>
+      <data key="d14">Adding deprecation to the type system mixes runtime lifecycle concerns with static type information.</data>
+      <data key="d15">precedent_conflict</data>
+      <data key="d13">702</data>
+      <data key="d16">rejected ideas</data>
+    </node>
+    <node id="alt_705_42">
+      <data key="d0">alternative</data>
+      <data key="d8">Use Final for read-only TypedDict items</data>
+      <data key="d9">Reuse Final[] to mark TypedDict items as read-only.</data>
+      <data key="d11">Final means 'cannot be reassigned' in variable context, but TypedDict items aren't variables. ReadOnly is a clearer semantic for dict items that shouldn't be modified.</data>
+      <data key="d12">ambiguity</data>
+      <data key="d13">705</data>
+    </node>
+    <node id="alt_705_43">
+      <data key="d0">alternative</data>
+      <data key="d8">Immutable TypedDict variant</data>
+      <data key="d9">Create a FrozenTypedDict that makes all items read-only at once.</data>
+      <data key="d11">Per-item control is more flexible. Some items may need to be mutable while others are read-only in the same dict type.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">705</data>
+    </node>
+    <node id="alt_742_44">
+      <data key="d0">alternative</data>
+      <data key="d8">Fix TypeGuard to narrow in both branches</data>
+      <data key="d9">Modify the existing TypeGuard (PEP 647) to also narrow the type in the else branch instead of introducing a new form.</data>
+      <data key="d11">Changing TypeGuard's semantics would break existing code that relies on the current one-sided narrowing behavior. A new form (TypeIs) with stricter requirements is safer.</data>
+      <data key="d12">backward_compat</data>
+      <data key="d13">742</data>
+    </node>
+    <node id="alt_742_45">
+      <data key="d0">alternative</data>
+      <data key="d8">Add a flag to TypeGuard</data>
+      <data key="d9">Add a parameter like TypeGuard[X, narrow_negative=True] to opt into both-branch narrowing.</data>
+      <data key="d11">Parameterized behavior on a type form is unusual in Python's type system and harder for type checkers to implement consistently.</data>
+      <data key="d12">complexity</data>
+      <data key="d13">742</data>
+    </node>
+    <node id="obj_742_21">
+      <data key="d0">objection</data>
+      <data key="d14">TypeIs and TypeGuard are easy to confuse. Having two similar but subtly different type narrowing mechanisms increases cognitive load.</data>
+      <data key="d15">complexity</data>
+      <data key="d13">742</data>
+      <data key="d16">rejected ideas</data>
+    </node>
+    <edge source="pep_483" target="person_guido_van_rossum" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_483" target="person_ivan_levkivskyi" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_483" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_483" target="concept_structural_subtyping" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_483" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_483" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_483" target="concept_type_narrowing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_483" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_483" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_483" target="concept_type_aliases" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_483" target="concept_literal_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_483" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_483" target="concept_variance" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_483" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_483" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_483" target="concept_string_annotations" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_483" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">abstract</data>
+    </edge>
+    <edge source="pep_483" target="pep_484" id="1">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_484" target="person_guido_van_rossum" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_484" target="person_jukka_lehtosalo" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_484" target="person_łukasz_langa" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_484" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="concept_type_narrowing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="concept_type_aliases" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="concept_literal_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="concept_variance" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="concept_alternative_syntax_forms" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="concept_decorator-based_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="concept_string_annotations" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_484" target="pep_483" id="0">
+      <data key="d17">references</data>
+      <data key="d18">abstract</data>
+    </edge>
+    <edge source="pep_484" target="pep_483" id="1">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_484" target="pep_526" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_484" target="pep_561" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_484" target="pep_563" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rejected_ideas</data>
+    </edge>
+    <edge source="pep_484" target="alt_484_0" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_484" target="alt_484_1" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_484" target="alt_484_2" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_484" target="alt_484_3" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_484" target="alt_484_4" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_484" target="obj_484_0" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_484" target="obj_484_1" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_526" target="person_ryan_gonzalez" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_526" target="person_philip_house" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_526" target="person_ivan_levkivskyi" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_526" target="person_lisa_roach" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_526" target="person_guido_van_rossum" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_526" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_526" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_526" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_526" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_526" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_526" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_526" target="concept_variance" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_526" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_526" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_526" target="concept_string_annotations" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_526" target="pep_526" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_526" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">abstract</data>
+    </edge>
+    <edge source="pep_526" target="pep_484" id="1">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_526" target="pep_484" id="2">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_526" target="pep_484" id="3">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_526" target="pep_484" id="4">
+      <data key="d17">references</data>
+      <data key="d18">rejected_ideas</data>
+    </edge>
+    <edge source="pep_526" target="alt_526_5" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_526" target="alt_526_6" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_544" target="person_ivan_levkivskyi" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_544" target="person_jukka_lehtosalo" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_544" target="person_łukasz_langa" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_544" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="concept_structural_subtyping" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="concept_type_narrowing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="concept_type_aliases" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="concept_variance" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="concept_alternative_syntax_forms" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="concept_decorator-based_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="concept_string_annotations" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_544" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">abstract</data>
+    </edge>
+    <edge source="pep_544" target="pep_484" id="1">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_544" target="pep_484" id="2">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_544" target="pep_484" id="3">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_544" target="pep_484" id="4">
+      <data key="d17">references</data>
+      <data key="d18">rejected_ideas</data>
+    </edge>
+    <edge source="pep_544" target="pep_483" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_544" target="pep_483" id="1">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_544" target="pep_544" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_544" target="pep_544" id="1">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_544" target="pep_544" id="2">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_544" target="pep_526" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_544" target="pep_526" id="1">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_544" target="pep_526" id="2">
+      <data key="d17">references</data>
+      <data key="d18">rejected_ideas</data>
+    </edge>
+    <edge source="pep_544" target="alt_544_7" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_544" target="alt_544_8" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_544" target="alt_544_9" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_544" target="obj_544_2" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_560" target="person_ivan_levkivskyi" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_560" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_560" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_560" target="concept_type_narrowing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_560" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_560" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_560" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_560" target="concept_decorator-based_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_560" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_560" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">abstract</data>
+    </edge>
+    <edge source="pep_560" target="pep_484" id="1">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_560" target="pep_484" id="2">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_560" target="pep_526" id="0">
+      <data key="d17">references</data>
+      <data key="d18">abstract</data>
+    </edge>
+    <edge source="pep_561" target="person_emma_harper_smith" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_561" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_561" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_561" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_561" target="concept_alternative_syntax_forms" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_561" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_561" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">abstract</data>
+    </edge>
+    <edge source="pep_561" target="pep_484" id="1">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_561" target="pep_484" id="2">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_561" target="pep_526" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_561" target="pep_561" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_563" target="person_łukasz_langa" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_563" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_563" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_563" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_563" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_563" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_563" target="concept_literal_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_563" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_563" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_563" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_563" target="concept_decorator-based_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_563" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_563" target="concept_string_annotations" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_563" target="pep_649" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_563" target="pep_649" id="1">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_563" target="pep_649" id="2">
+      <data key="d17">references</data>
+      <data key="d18">backwards_compat</data>
+    </edge>
+    <edge source="pep_563" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">abstract</data>
+    </edge>
+    <edge source="pep_563" target="pep_484" id="1">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_563" target="pep_484" id="2">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_563" target="pep_526" id="0">
+      <data key="d17">references</data>
+      <data key="d18">abstract</data>
+    </edge>
+    <edge source="pep_563" target="pep_526" id="1">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_563" target="pep_526" id="2">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_563" target="pep_544" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_563" target="pep_560" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_563" target="pep_563" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_563" target="alt_563_10" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_563" target="alt_563_11" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_563" target="obj_563_3" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_563" target="obj_563_4" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_563" target="obj_563_5" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_563" target="obj_563_6" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_585" target="person_łukasz_langa" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_585" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_585" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_585" target="concept_type_narrowing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_585" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_585" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_585" target="concept_type_aliases" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_585" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_585" target="concept_string_annotations" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_585" target="pep_585" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_585" target="pep_563" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_585" target="alt_585_12" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_585" target="obj_585_7" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_586" target="person_michael_lee" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_586" target="person_ivan_levkivskyi" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_586" target="person_jukka_lehtosalo" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_586" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_586" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_586" target="concept_type_narrowing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_586" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_586" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_586" target="concept_type_aliases" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_586" target="concept_literal_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_586" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_586" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_586" target="concept_alternative_syntax_forms" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_586" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_586" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_586" target="concept_string_annotations" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_586" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">abstract</data>
+    </edge>
+    <edge source="pep_586" target="pep_484" id="1">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_586" target="pep_484" id="2">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_586" target="pep_484" id="3">
+      <data key="d17">references</data>
+      <data key="d18">rejected_ideas</data>
+    </edge>
+    <edge source="pep_586" target="pep_591" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_586" target="alt_586_13" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_586" target="alt_586_14" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_589" target="person_jukka_lehtosalo" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_589" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_589" target="concept_structural_subtyping" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_589" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_589" target="concept_type_narrowing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_589" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_589" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_589" target="concept_type_aliases" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_589" target="concept_literal_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_589" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_589" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_589" target="concept_variance" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_589" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_589" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_589" target="concept_string_annotations" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_589" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">abstract</data>
+    </edge>
+    <edge source="pep_589" target="pep_484" id="1">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_589" target="pep_484" id="2">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_589" target="pep_484" id="3">
+      <data key="d17">references</data>
+      <data key="d18">rejected_ideas</data>
+    </edge>
+    <edge source="pep_589" target="pep_526" id="0">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_589" target="pep_483" id="0">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_589" target="pep_591" id="0">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_589" target="pep_586" id="0">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_589" target="alt_589_15" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_589" target="alt_589_16" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_589" target="alt_589_17" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_589" target="alt_589_18" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_589" target="obj_589_8" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_591" target="person_michael_j._sullivan" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_591" target="person_ivan_levkivskyi" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_591" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_591" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_591" target="concept_type_narrowing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_591" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_591" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_591" target="concept_literal_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_591" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_591" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_591" target="concept_decorator-based_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_591" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_591" target="pep_586" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_591" target="alt_591_19" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_593" target="person_till_varoquaux" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_593" target="person_konstantin_kashin" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_593" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_593" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_593" target="concept_type_narrowing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_593" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_593" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_593" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_593" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_593" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_593" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_604" target="person_philippe_prados" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_604" target="person_maggie_moss" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_604" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_604" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_604" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_604" target="concept_type_narrowing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_604" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_604" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_604" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_604" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_604" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_604" target="pep_484" id="1">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_604" target="pep_526" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_604" target="pep_585" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_604" target="pep_563" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_612" target="person_mark_mendoza" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_612" target="concept_structural_subtyping" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_612" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_612" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_612" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_612" target="concept_variance" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_612" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_612" target="concept_decorator-based_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_612" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_612" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_612" target="pep_544" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_613" target="person_shannon_zhu" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_613" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_613" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_613" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_613" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_613" target="concept_type_aliases" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_613" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_613" target="concept_string_annotations" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_613" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_613" target="alt_613_20" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_646" target="person_mark_mendoza" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_646" target="person_matthew_rahtz" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_646" target="person_pradeep_kumar_srinivasan" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_646" target="person_vincent_siles" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_646" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_646" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_646" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_646" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_646" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_646" target="concept_literal_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_646" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_646" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_646" target="concept_variance" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_646" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_646" target="concept_decorator-based_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_646" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_646" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">abstract</data>
+    </edge>
+    <edge source="pep_646" target="pep_484" id="1">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_646" target="pep_646" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_646" target="alt_646_21" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_646" target="alt_646_22" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_646" target="obj_646_9" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_647" target="person_eric_traut" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_647" target="concept_structural_subtyping" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_647" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_647" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_647" target="concept_type_narrowing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_647" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_647" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_647" target="concept_literal_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_647" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_647" target="concept_variance" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_647" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_647" target="concept_decorator-based_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_647" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_647" target="concept_string_annotations" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_647" target="alt_647_23" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_647" target="alt_647_24" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_649" target="person_larry_hastings" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_649" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_649" target="concept_structural_subtyping" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_649" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_649" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_649" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_649" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_649" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_649" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_649" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_649" target="concept_decorator-based_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_649" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_649" target="concept_string_annotations" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_649" target="pep_563" id="0">
+      <data key="d17">supersedes</data>
+    </edge>
+    <edge source="pep_649" target="pep_563" id="1">
+      <data key="d17">supersedes</data>
+    </edge>
+    <edge source="pep_649" target="pep_563" id="2">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_649" target="pep_563" id="3">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_649" target="pep_563" id="4">
+      <data key="d17">references</data>
+      <data key="d18">backwards_compat</data>
+    </edge>
+    <edge source="pep_649" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_649" target="pep_526" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_649" target="alt_649_25" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_649" target="alt_649_26" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_649" target="alt_649_27" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_649" target="obj_649_10" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_649" target="obj_649_11" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_649" target="obj_649_12" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_649" target="obj_649_13" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_649" target="obj_649_14" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_649" target="obj_649_15" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_649" target="obj_649_16" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_655" target="person_david_foster" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_655" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_655" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_655" target="concept_type_narrowing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_655" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_655" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_655" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_655" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_655" target="concept_variance" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_655" target="concept_alternative_syntax_forms" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_655" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_655" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_655" target="pep_589" id="0">
+      <data key="d17">references</data>
+      <data key="d18">abstract</data>
+    </edge>
+    <edge source="pep_655" target="pep_589" id="1">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_655" target="pep_604" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rejected_ideas</data>
+    </edge>
+    <edge source="pep_655" target="alt_655_28" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_655" target="alt_655_29" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_673" target="person_pradeep_kumar_srinivasan" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_673" target="person_james_hilton-balfe" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_673" target="concept_structural_subtyping" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_673" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_673" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_673" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_673" target="concept_type_aliases" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_673" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_673" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_673" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">abstract</data>
+    </edge>
+    <edge source="pep_673" target="pep_544" id="0">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_673" target="alt_673_30" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_673" target="alt_673_31" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_675" target="person_pradeep_kumar_srinivasan" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_675" target="person_graham_bleaney" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_675" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_675" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_675" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_675" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_675" target="concept_literal_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_675" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_675" target="concept_alternative_syntax_forms" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_675" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_675" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_675" target="pep_586" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_675" target="pep_586" id="1">
+      <data key="d17">references</data>
+      <data key="d18">backwards_compat</data>
+    </edge>
+    <edge source="pep_675" target="pep_675" id="0">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_675" target="alt_675_32" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_675" target="alt_675_33" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_675" target="obj_675_17" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_681" target="person_erik_de_bonte" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_681" target="person_eric_traut" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_681" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_681" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_681" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_681" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_681" target="concept_literal_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_681" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_681" target="concept_alternative_syntax_forms" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_681" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_681" target="concept_decorator-based_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_681" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_681" target="pep_526" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rejected_ideas</data>
+    </edge>
+    <edge source="pep_681" target="alt_681_34" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_681" target="alt_681_35" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_692" target="person_franek_magiera" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_692" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_692" target="concept_structural_subtyping" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_692" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_692" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_692" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_692" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_692" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_692" target="concept_variance" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_692" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_692" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_692" target="pep_589" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_692" target="pep_646" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_692" target="pep_655" id="0">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_692" target="pep_692" id="0">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_692" target="alt_692_36" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_692" target="obj_692_18" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_695" target="person_eric_traut" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_695" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_695" target="concept_structural_subtyping" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_695" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_695" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_695" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_695" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_695" target="concept_type_aliases" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_695" target="concept_literal_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_695" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_695" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_695" target="concept_variance" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_695" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_695" target="concept_decorator-based_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_695" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_695" target="concept_string_annotations" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_695" target="pep_484" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_695" target="pep_484" id="1">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_695" target="pep_612" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_695" target="pep_612" id="1">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_695" target="pep_646" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_695" target="pep_646" id="1">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_695" target="pep_483" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_695" target="pep_613" id="0">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_695" target="pep_563" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_695" target="pep_649" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_695" target="alt_695_37" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_695" target="alt_695_38" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_695" target="obj_695_19" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_696" target="person_james_hilton-balfe" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_696" target="concept_structural_subtyping" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_696" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_696" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_696" target="concept_type_aliases" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_696" target="concept_literal_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_696" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_696" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_696" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_696" target="pep_695" id="0">
+      <data key="d17">references</data>
+      <data key="d18">other</data>
+    </edge>
+    <edge source="pep_698" target="person_steven_troxler" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_698" target="person_joshua_xu" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_698" target="person_shannon_zhu" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_698" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_698" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_698" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_698" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_698" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_698" target="concept_decorator-based_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_698" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_698" target="pep_591" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_698" target="alt_698_39" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_698" target="alt_698_40" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_702" target="person_jelle_zijlstra" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_702" target="concept_structural_subtyping" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_702" target="concept_type_narrowing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_702" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_702" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_702" target="concept_literal_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_702" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_702" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_702" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_702" target="concept_decorator-based_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_702" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_702" target="concept_string_annotations" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_702" target="pep_698" id="0">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_702" target="alt_702_41" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_702" target="obj_702_20" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="pep_705" target="person_alice_purcell" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_705" target="concept_gradual_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_705" target="concept_structural_subtyping" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_705" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_705" target="concept_generic_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_705" target="concept_annotation_evaluation" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_705" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_705" target="concept_literal_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_705" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_705" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_705" target="concept_variance" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_705" target="concept_alternative_syntax_forms" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_705" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_705" target="concept_decorator-based_typing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_705" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_705" target="pep_589" id="0">
+      <data key="d17">references</data>
+      <data key="d18">abstract</data>
+    </edge>
+    <edge source="pep_705" target="pep_589" id="1">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_705" target="pep_589" id="2">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_705" target="pep_544" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_705" target="pep_655" id="0">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_705" target="pep_692" id="0">
+      <data key="d17">references</data>
+      <data key="d18">specification</data>
+    </edge>
+    <edge source="pep_705" target="pep_591" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rejected_ideas</data>
+    </edge>
+    <edge source="pep_705" target="alt_705_42" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_705" target="alt_705_43" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_742" target="person_jelle_zijlstra" id="0">
+      <data key="d17">authored_by</data>
+    </edge>
+    <edge source="pep_742" target="concept_structural_subtyping" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_742" target="concept_union_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_742" target="concept_type_narrowing" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_742" target="concept_runtime_introspection" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_742" target="concept_literal_types" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_742" target="concept_typeddict" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_742" target="concept_final_and_constants" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_742" target="concept_variance" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_742" target="concept_static_checker_compatibility" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_742" target="concept_self_type" id="0">
+      <data key="d17">relates_to_concept</data>
+    </edge>
+    <edge source="pep_742" target="pep_647" id="0">
+      <data key="d17">references</data>
+      <data key="d18">rationale</data>
+    </edge>
+    <edge source="pep_742" target="pep_647" id="1">
+      <data key="d17">references</data>
+      <data key="d18">rejected_ideas</data>
+    </edge>
+    <edge source="pep_742" target="alt_742_44" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_742" target="alt_742_45" id="0">
+      <data key="d17">considers_and_rejects</data>
+    </edge>
+    <edge source="pep_742" target="obj_742_21" id="0">
+      <data key="d17">raises</data>
+    </edge>
+    <edge source="alt_484_1" target="pep_695" id="0">
+      <data key="d17">resembles</data>
+      <data key="d19">PEP 484 rejected angle brackets for generics; PEP 695 revisited type parameter syntax and chose a different approach entirely.</data>
+    </edge>
+    <edge source="alt_563_10" target="pep_649" id="0">
+      <data key="d17">resembles</data>
+      <data key="d19">PEP 563 rejected lazy/deferred evaluation as too complex; PEP 649 later shipped this exact approach with a different mechanism.</data>
+    </edge>
+    <edge source="alt_647_24" target="pep_742" id="0">
+      <data key="d17">resembles</data>
+      <data key="d19">PEP 647 rejected bidirectional narrowing for TypeGuard; PEP 742 introduced TypeIs which provides this with stricter guarantees.</data>
+    </edge>
+  </graph>
+</graphml>
